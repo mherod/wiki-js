@@ -1,4 +1,4 @@
-# wiki-js
+# @mherod/wiki-js
 
 A modern JavaScript/TypeScript library for interacting with the Wikimedia API. This library provides a type-safe way to fetch and interact with Wikipedia pages, categories, and media.
 
@@ -6,20 +6,20 @@ A modern JavaScript/TypeScript library for interacting with the Wikimedia API. T
 
 ```bash
 # Using pnpm (recommended)
-pnpm add wiki-js
+pnpm add @mherod/wiki-js
 
 # Using npm
-npm install wiki-js
+npm install @mherod/wiki-js
 
 # Using yarn
-yarn add wiki-js
+yarn add @mherod/wiki-js
 ```
 
 ## Usage
 
 ### ESM
 ```typescript
-import { WikimediaClient } from 'wiki-js';
+import { WikimediaClient } from '@mherod/wiki-js';
 
 const client = new WikimediaClient({
   userAgent: 'MyApp/1.0', // It's good practice to set a user agent
@@ -37,7 +37,7 @@ const categories = await client.getCategories('JavaScript');
 
 ### CommonJS
 ```javascript
-const { WikimediaClient } = require('wiki-js');
+const { WikimediaClient } = require('@mherod/wiki-js');
 
 const client = new WikimediaClient({
   baseURL: 'https://en.wikipedia.org/w/api.php', // Optional: specify a different wiki
