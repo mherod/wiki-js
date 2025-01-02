@@ -20,6 +20,7 @@
     "build": "tsup",
     "dev": "tsup --watch",
     "test": "jest",
+    "test:coverage": "jest --coverage",
     "lint": "eslint src/**/*.ts --format=codeframe",
     "format": "prettier --write \"src/**/*.{ts,json,md}\" && eslint src/**/*.ts --fix",
     "prepublishOnly": "pnpm run clean && pnpm run test && pnpm run lint && pnpm run build",
