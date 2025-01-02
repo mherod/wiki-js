@@ -1,6 +1,6 @@
 {
   "name": "@mherod/wiki-js",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "description": "A modern TypeScript/JavaScript library for interacting with the Wikimedia API, providing type-safe access to Wikipedia pages, categories, and media",
   "type": "module",
   "main": "./dist/index.cjs",
