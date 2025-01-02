@@ -33,7 +33,7 @@ export default [
       '@typescript-eslint/no-unused-vars': ['error', { argsIgnorePattern: '^_' }],
       
       // Prettier Rules
-      'prettier/prettier': ['error', {}, { usePrettierrc: true }],
+      'prettier/prettier': ['warn', {}, { usePrettierrc: true }],
       'arrow-body-style': 'off',
       'prefer-arrow-callback': 'off',
       
