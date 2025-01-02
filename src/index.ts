@@ -30,6 +30,9 @@ import {
   PageViewsOptionsSchema,
   PageViewsResponseSchema,
   type PageViewsOptions,
+  RevisionOptionsSchema,
+  createRevisionsResponseSchema,
+  type RevisionOptions,
 } from './schemas';
 
 export * from './schemas';
@@ -422,5 +425,40 @@ export class WikimediaClient {
     );
 
     return PageViewsResponseSchema.parse(response.data);
+  }
+
+  /**
+   * Get revision history for a page
+   * 
+   * @param title - The title of the page
+   * @param options - Options for filtering and formatting revisions
+   * @returns Page revision history
+   */
+  async getRevisions(title: string, options: RevisionOptions = {}) {
+    const validatedOptions = RevisionOptionsSchema.parse(options);
+
+    const params = {
+      action: 'query',
+      prop: 'revisions',
+      titles: title,
+      format: 'json',
+      rvlimit: validatedOptions.limit,
+      rvstart: validatedOptions.start,
+      rvend: validatedOptions.end,
+      rvdir: validatedOptions.direction,
+      rvuser: validatedOptions.user,
+      rvexcludeuser: validatedOptions.excludeUser,
+      rvtag: validatedOptions.tag,
+      rvprop: validatedOptions.properties?.join('|') ?? 
+        'ids|timestamp|flags|comment|size|user|userid',
+    };
+
+    const response = await this.client.get('', {
+      params: Object.fromEntries(
+        Object.entries(params).filter(([_, v]) => v !== undefined)
+      ),
+    });
+
+    return createRevisionsResponseSchema().parse(response.data);
   }
 }

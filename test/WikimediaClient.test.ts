@@ -887,4 +887,114 @@ describe('WikimediaClient', () => {
       })).rejects.toThrow();
     });
   });
+
+  describe('getRevisions', () => {
+    const mockRevision = {
+      revid: 1234567,
+      parentid: 1234566,
+      user: 'TestUser',
+      userid: 12345,
+      timestamp: '2024-01-01T00:00:00Z',
+      size: 1000,
+      comment: 'Test edit',
+      parsedcomment: 'Test edit',
+      sha1: 'abc123',
+      roles: ['user'],
+      tags: ['mobile edit'],
+    };
+
+    const mockResponse = {
+      query: {
+        pages: {
+          '12345': {
+            pageid: 12345,
+            ns: 0,
+            title: 'Test Page',
+            revisions: [mockRevision],
+          },
+        },
+      },
+    };
+
+    it('should fetch revisions with default options', async () => {
+      mockAxiosInstance.get.mockResolvedValue({ data: mockResponse });
+
+      const result = await client.getRevisions('Test Page');
+      
+      expect(result).toEqual(mockResponse);
+      expect(mockAxiosInstance.get).toHaveBeenCalledWith('', {
+        params: expect.objectContaining({
+          action: 'query',
+          prop: 'revisions',
+          titles: 'Test Page',
+          format: 'json',
+          rvprop: 'ids|timestamp|flags|comment|size|user|userid',
+        }),
+      });
+    });
+
+    it('should fetch revisions with custom options', async () => {
+      mockAxiosInstance.get.mockResolvedValue({ data: mockResponse });
+
+      const result = await client.getRevisions('Test Page', {
+        limit: 10,
+        start: '2024-01-01T00:00:00Z',
+        end: '2024-01-31T23:59:59Z',
+        direction: 'newer',
+        user: 'TestUser',
+        excludeUser: 'ExcludedUser',
+        tag: 'mobile edit',
+        properties: ['ids', 'timestamp', 'user', 'content'],
+      });
+      
+      expect(result).toEqual(mockResponse);
+      expect(mockAxiosInstance.get).toHaveBeenCalledWith('', {
+        params: expect.objectContaining({
+          rvlimit: 10,
+          rvstart: '2024-01-01T00:00:00Z',
+          rvend: '2024-01-31T23:59:59Z',
+          rvdir: 'newer',
+          rvuser: 'TestUser',
+          rvexcludeuser: 'ExcludedUser',
+          rvtag: 'mobile edit',
+          rvprop: 'ids|timestamp|user|content',
+        }),
+      });
+    });
+
+    it('should validate options', async () => {
+      mockAxiosInstance.get.mockResolvedValue({ data: mockResponse });
+
+      // Test invalid limit
+      await expect(client.getRevisions('Test Page', {
+        limit: 501, // Max is 500
+      })).rejects.toThrow();
+
+      // Test invalid direction
+      await expect(client.getRevisions('Test Page', {
+        direction: 'invalid' as any,
+      })).rejects.toThrow();
+
+      // Test invalid properties
+      await expect(client.getRevisions('Test Page', {
+        properties: ['invalid' as any],
+      })).rejects.toThrow();
+    });
+
+    it('should handle empty options', async () => {
+      mockAxiosInstance.get.mockResolvedValue({ data: mockResponse });
+
+      await client.getRevisions('Test Page', {});
+      
+      expect(mockAxiosInstance.get).toHaveBeenCalledWith('', {
+        params: expect.objectContaining({
+          action: 'query',
+          prop: 'revisions',
+          titles: 'Test Page',
+          format: 'json',
+          rvprop: 'ids|timestamp|flags|comment|size|user|userid',
+        }),
+      });
+    });
+  });
 }); 

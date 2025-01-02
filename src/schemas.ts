@@ -491,6 +491,76 @@ export const PageViewsResponseSchema = z.object({
 export type PageViewsOptions = z.infer<typeof PageViewsOptionsSchema>;
 export type PageViewsResponse = z.infer<typeof PageViewsResponseSchema>;
 
+/**
+ * Schema for revision options
+ */
+export const RevisionOptionsSchema = z.object({
+  limit: z.number().int().min(1).max(500).optional(),
+  start: z.string().optional(), // Timestamp to start listing from
+  end: z.string().optional(),   // Timestamp to stop listing at
+  direction: z.enum(['newer', 'older']).optional(),
+  user: z.string().optional(),  // Only list revisions by this user
+  excludeUser: z.string().optional(), // Exclude revisions by this user
+  tag: z.string().optional(),   // Only list revisions with this tag
+  properties: z.array(
+    z.enum([
+      'ids',
+      'timestamp',
+      'flags',
+      'comment',
+      'parsedcomment',
+      'size',
+      'sha1',
+      'roles',
+      'tags',
+      'user',
+      'userid',
+      'content',
+    ])
+  ).optional(),
+}).strict();
+
+/**
+ * Schema for a single revision
+ */
+export const RevisionSchema = z.object({
+  revid: z.number(),
+  parentid: z.number(),
+  minor: z.boolean().optional(),
+  user: z.string(),
+  userid: z.number().optional(),
+  timestamp: z.string(),
+  size: z.number(),
+  sha1: z.string().optional(),
+  roles: z.array(z.string()).optional(),
+  comment: z.string().optional(),
+  parsedcomment: z.string().optional(),
+  tags: z.array(z.string()).optional(),
+  content: z.string().optional(),
+  anon: z.boolean().optional(),
+});
+
+/**
+ * Schema for revisions response
+ */
+export const createRevisionsResponseSchema = () =>
+  createWikimediaResponseSchema(
+    z.object({
+      pages: z.record(
+        z.object({
+          pageid: z.number(),
+          ns: z.number(),
+          title: z.string(),
+          revisions: z.array(RevisionSchema).optional(),
+        })
+      ),
+    })
+  );
+
+export type RevisionOptions = z.infer<typeof RevisionOptionsSchema>;
+export type Revision = z.infer<typeof RevisionSchema>;
+export type RevisionsResponse = z.infer<ReturnType<typeof createRevisionsResponseSchema>>;
+
 // Type exports
 /** Configuration options for the WikimediaClient */
 export type WikimediaClientConfig = z.infer<typeof WikimediaClientConfigSchema>;
