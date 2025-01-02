@@ -18,6 +18,10 @@ import {
   AllLinksOptionsSchema,
   AllPagesOptionsSchema,
   ExtractOptionsSchema,
+  SearchImagesParamsSchema,
+  AllLinksParamsSchema,
+  AllPagesParamsSchema,
+  ExtractsParamsSchema,
   type WikimediaClientConfig,
   type ImageSearchOptions,
   type AllLinksOptions,
@@ -26,72 +30,6 @@ import {
 } from './schemas';
 
 export * from './schemas';
-
-// API Parameter Types
-interface BaseApiParams {
-  action: string;
-  format: 'json';
-}
-
-interface SearchImagesParams extends BaseApiParams {
-  list: 'allimages';
-  aisearch?: string;
-  aisort?: string;
-  aidir?: string;
-  aifrom?: string;
-  aito?: string;
-  aistart?: string;
-  aiend?: string;
-  aiminsize?: number;
-  aimaxsize?: number;
-  aiuser?: string;
-  aifilterbots?: string;
-  aisha1?: string;
-  aiprop?: string;
-  ailimit?: number;
-}
-
-interface AllLinksParams extends BaseApiParams {
-  list: 'alllinks';
-  alfrom?: string;
-  alto?: string;
-  alprefix?: string;
-  alunique?: '';
-  alprop?: string;
-  alnamespace?: number;
-  allimit?: number;
-  aldir?: string;
-}
-
-interface AllPagesParams extends BaseApiParams {
-  list: 'allpages';
-  apfrom?: string;
-  apto?: string;
-  apprefix?: string;
-  apnamespace?: number;
-  apfilterredir?: string;
-  apfilterlanglinks?: string;
-  apminsize?: number;
-  apmaxsize?: number;
-  apprtype?: string;
-  apprlevel?: string;
-  apprfiltercascade?: string;
-  apprexpiry?: string;
-  aplimit?: number;
-  apdir?: string;
-}
-
-interface ExtractsParams extends BaseApiParams {
-  prop: 'extracts';
-  titles: string;
-  explaintext?: '';
-  exintro?: '';
-  exlimit?: number;
-  excharacters?: number;
-  exchars?: number;
-  exsectionformat?: string;
-  exsentences?: number;
-}
 
 export class WikimediaClient {
   private client: AxiosInstance;
@@ -239,69 +177,25 @@ export class WikimediaClient {
   async searchImages(query: string, options: ImageSearchOptions = {}) {
     const validatedOptions = ImageSearchOptionsSchema.parse(options);
     
-    const params: SearchImagesParams = {
+    const params = SearchImagesParamsSchema.parse({
       action: 'query',
       list: 'allimages',
       format: 'json',
-    };
-
-    if (query) {
-      params.aisearch = query;
-    }
-
-    if (validatedOptions.sort) {
-      params.aisort = validatedOptions.sort;
-    }
-
-    if (validatedOptions.direction) {
-      params.aidir = validatedOptions.direction;
-    }
-
-    if (validatedOptions.from && (!validatedOptions.sort || validatedOptions.sort === 'name')) {
-      params.aifrom = validatedOptions.from;
-    }
-
-    if (validatedOptions.to && (!validatedOptions.sort || validatedOptions.sort === 'name')) {
-      params.aito = validatedOptions.to;
-    }
-
-    if (validatedOptions.start && validatedOptions.sort === 'timestamp') {
-      params.aistart = validatedOptions.start;
-    }
-
-    if (validatedOptions.end && validatedOptions.sort === 'timestamp') {
-      params.aiend = validatedOptions.end;
-    }
-
-    if (validatedOptions.minSize) {
-      params.aiminsize = validatedOptions.minSize;
-    }
-
-    if (validatedOptions.maxSize) {
-      params.aimaxsize = validatedOptions.maxSize;
-    }
-
-    if (validatedOptions.user && validatedOptions.sort === 'timestamp') {
-      params.aiuser = validatedOptions.user;
-    }
-
-    if (validatedOptions.filterBots && validatedOptions.sort === 'timestamp') {
-      params.aifilterbots = validatedOptions.filterBots;
-    }
-
-    if (validatedOptions.sha1) {
-      params.aisha1 = validatedOptions.sha1;
-    }
-
-    if (validatedOptions.properties) {
-      params.aiprop = validatedOptions.properties.join('|');
-    } else {
-      params.aiprop = 'timestamp|user|size|url|mime|mediatype|bitdepth';
-    }
-
-    if (validatedOptions.limit) {
-      params.ailimit = validatedOptions.limit;
-    }
+      ...(query && { aisearch: query }),
+      ...(validatedOptions.sort && { aisort: validatedOptions.sort }),
+      ...(validatedOptions.direction && { aidir: validatedOptions.direction }),
+      ...(validatedOptions.from && (!validatedOptions.sort || validatedOptions.sort === 'name') && { aifrom: validatedOptions.from }),
+      ...(validatedOptions.to && (!validatedOptions.sort || validatedOptions.sort === 'name') && { aito: validatedOptions.to }),
+      ...(validatedOptions.start && validatedOptions.sort === 'timestamp' && { aistart: validatedOptions.start }),
+      ...(validatedOptions.end && validatedOptions.sort === 'timestamp' && { aiend: validatedOptions.end }),
+      ...(validatedOptions.minSize && { aiminsize: validatedOptions.minSize }),
+      ...(validatedOptions.maxSize && { aimaxsize: validatedOptions.maxSize }),
+      ...(validatedOptions.user && validatedOptions.sort === 'timestamp' && { aiuser: validatedOptions.user }),
+      ...(validatedOptions.filterBots && validatedOptions.sort === 'timestamp' && { aifilterbots: validatedOptions.filterBots }),
+      ...(validatedOptions.sha1 && { aisha1: validatedOptions.sha1 }),
+      aiprop: validatedOptions.properties?.join('|') ?? 'timestamp|user|size|url|mime|mediatype|bitdepth',
+      ...(validatedOptions.limit && { ailimit: validatedOptions.limit }),
+    });
 
     const response = await this.client.get('', { params });
     return createSearchImagesResponseSchema().parse(response.data);
@@ -343,45 +237,19 @@ export class WikimediaClient {
   async getAllLinks(options: AllLinksOptions = {}) {
     const validatedOptions = AllLinksOptionsSchema.parse(options);
     
-    const params: AllLinksParams = {
+    const params = AllLinksParamsSchema.parse({
       action: 'query',
       list: 'alllinks',
       format: 'json',
-    };
-
-    if (validatedOptions.from) {
-      params.alfrom = validatedOptions.from;
-    }
-
-    if (validatedOptions.to) {
-      params.alto = validatedOptions.to;
-    }
-
-    if (validatedOptions.prefix) {
-      params.alprefix = validatedOptions.prefix;
-    }
-
-    if (validatedOptions.unique) {
-      params.alunique = '';
-    }
-
-    if (validatedOptions.properties) {
-      params.alprop = validatedOptions.properties.join('|');
-    } else {
-      params.alprop = 'title';
-    }
-
-    if (validatedOptions.namespace !== undefined) {
-      params.alnamespace = validatedOptions.namespace;
-    }
-
-    if (validatedOptions.limit) {
-      params.allimit = validatedOptions.limit;
-    }
-
-    if (validatedOptions.direction) {
-      params.aldir = validatedOptions.direction;
-    }
+      ...(validatedOptions.from && { alfrom: validatedOptions.from }),
+      ...(validatedOptions.to && { alto: validatedOptions.to }),
+      ...(validatedOptions.prefix && { alprefix: validatedOptions.prefix }),
+      ...(validatedOptions.unique && { alunique: '' }),
+      alprop: validatedOptions.properties?.join('|') ?? 'title',
+      ...(validatedOptions.namespace !== undefined && { alnamespace: validatedOptions.namespace }),
+      ...(validatedOptions.limit && { allimit: validatedOptions.limit }),
+      ...(validatedOptions.direction && { aldir: validatedOptions.direction }),
+    });
 
     const response = await this.client.get('', { params });
     return createAllLinksResponseSchema().parse(response.data);
@@ -393,67 +261,25 @@ export class WikimediaClient {
   async getAllPages(options: AllPagesOptions = {}) {
     const validatedOptions = AllPagesOptionsSchema.parse(options);
     
-    const params: AllPagesParams = {
+    const params = AllPagesParamsSchema.parse({
       action: 'query',
       list: 'allpages',
       format: 'json',
-    };
-
-    if (validatedOptions.from) {
-      params.apfrom = validatedOptions.from;
-    }
-
-    if (validatedOptions.to) {
-      params.apto = validatedOptions.to;
-    }
-
-    if (validatedOptions.prefix) {
-      params.apprefix = validatedOptions.prefix;
-    }
-
-    if (validatedOptions.namespace !== undefined) {
-      params.apnamespace = validatedOptions.namespace;
-    }
-
-    if (validatedOptions.filterRedirects) {
-      params.apfilterredir = validatedOptions.filterRedirects;
-    }
-
-    if (validatedOptions.filterLangLinks) {
-      params.apfilterlanglinks = validatedOptions.filterLangLinks;
-    }
-
-    if (validatedOptions.minSize) {
-      params.apminsize = validatedOptions.minSize;
-    }
-
-    if (validatedOptions.maxSize) {
-      params.apmaxsize = validatedOptions.maxSize;
-    }
-
-    if (validatedOptions.protectionType) {
-      params.apprtype = validatedOptions.protectionType.join('|');
-    }
-
-    if (validatedOptions.protectionLevel) {
-      params.apprlevel = validatedOptions.protectionLevel.join('|');
-    }
-
-    if (validatedOptions.protectionCascade) {
-      params.apprfiltercascade = validatedOptions.protectionCascade;
-    }
-
-    if (validatedOptions.protectionExpiry) {
-      params.apprexpiry = validatedOptions.protectionExpiry;
-    }
-
-    if (validatedOptions.limit) {
-      params.aplimit = validatedOptions.limit;
-    }
-
-    if (validatedOptions.direction) {
-      params.apdir = validatedOptions.direction;
-    }
+      ...(validatedOptions.from && { apfrom: validatedOptions.from }),
+      ...(validatedOptions.to && { apto: validatedOptions.to }),
+      ...(validatedOptions.prefix && { apprefix: validatedOptions.prefix }),
+      ...(validatedOptions.namespace !== undefined && { apnamespace: validatedOptions.namespace }),
+      ...(validatedOptions.filterRedirects && { apfilterredir: validatedOptions.filterRedirects }),
+      ...(validatedOptions.filterLangLinks && { apfilterlanglinks: validatedOptions.filterLangLinks }),
+      ...(validatedOptions.minSize && { apminsize: validatedOptions.minSize }),
+      ...(validatedOptions.maxSize && { apmaxsize: validatedOptions.maxSize }),
+      ...(validatedOptions.protectionType && { apprtype: validatedOptions.protectionType.join('|') }),
+      ...(validatedOptions.protectionLevel && { apprlevel: validatedOptions.protectionLevel.join('|') }),
+      ...(validatedOptions.protectionCascade && { apprfiltercascade: validatedOptions.protectionCascade }),
+      ...(validatedOptions.protectionExpiry && { apprexpiry: validatedOptions.protectionExpiry }),
+      ...(validatedOptions.limit && { aplimit: validatedOptions.limit }),
+      ...(validatedOptions.direction && { apdir: validatedOptions.direction }),
+    });
 
     const response = await this.client.get('', { params });
     return createAllPagesResponseSchema().parse(response.data);
@@ -465,40 +291,19 @@ export class WikimediaClient {
   async getExtracts(titles: string | string[], options: ExtractOptions = {}) {
     const validatedOptions = ExtractOptionsSchema.parse(options);
     
-    const params: ExtractsParams = {
+    const params = ExtractsParamsSchema.parse({
       action: 'query',
       prop: 'extracts',
       titles: Array.isArray(titles) ? titles.join('|') : titles,
       format: 'json',
-    };
-
-    if (validatedOptions.plainText) {
-      params.explaintext = '';
-    }
-
-    if (validatedOptions.sectionFormat) {
-      params.exsectionformat = validatedOptions.sectionFormat;
-    }
-
-    if (validatedOptions.sentences) {
-      params.exsentences = validatedOptions.sentences;
-    }
-
-    if (validatedOptions.chars) {
-      params.exchars = validatedOptions.chars;
-    }
-
-    if (validatedOptions.limit) {
-      params.exlimit = validatedOptions.limit;
-    }
-
-    if (validatedOptions.introOnly) {
-      params.exintro = '';
-    }
-
-    if (validatedOptions.singleSection) {
-      params.exsectionformat = 'raw';
-    }
+      ...(validatedOptions.plainText && { explaintext: '' }),
+      ...(validatedOptions.sectionFormat && { exsectionformat: validatedOptions.sectionFormat }),
+      ...(validatedOptions.sentences && { exsentences: validatedOptions.sentences }),
+      ...(validatedOptions.chars && { exchars: validatedOptions.chars }),
+      ...(validatedOptions.limit && { exlimit: validatedOptions.limit }),
+      ...(validatedOptions.introOnly && { exintro: '' }),
+      ...(validatedOptions.singleSection && { exsectionformat: 'raw' }),
+    });
 
     const response = await this.client.get('', { params });
     return createExtractsResponseSchema().parse(response.data);

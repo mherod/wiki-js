@@ -382,7 +382,73 @@ export const createExtractsResponseSchema = () =>
     })
   );
 
-// Type exports
+// API Parameter Schemas
+export const BaseApiParamsSchema = z.object({
+  action: z.string(),
+  format: z.literal('json'),
+});
+
+export const SearchImagesParamsSchema = BaseApiParamsSchema.extend({
+  list: z.literal('allimages'),
+  aisearch: z.string().optional(),
+  aisort: z.string().optional(),
+  aidir: z.string().optional(),
+  aifrom: z.string().optional(),
+  aito: z.string().optional(),
+  aistart: z.string().optional(),
+  aiend: z.string().optional(),
+  aiminsize: z.number().optional(),
+  aimaxsize: z.number().optional(),
+  aiuser: z.string().optional(),
+  aifilterbots: z.string().optional(),
+  aisha1: z.string().optional(),
+  aiprop: z.string().optional(),
+  ailimit: z.number().optional(),
+});
+
+export const AllLinksParamsSchema = BaseApiParamsSchema.extend({
+  list: z.literal('alllinks'),
+  alfrom: z.string().optional(),
+  alto: z.string().optional(),
+  alprefix: z.string().optional(),
+  alunique: z.literal('').optional(),
+  alprop: z.string().optional(),
+  alnamespace: z.number().optional(),
+  allimit: z.number().optional(),
+  aldir: z.string().optional(),
+});
+
+export const AllPagesParamsSchema = BaseApiParamsSchema.extend({
+  list: z.literal('allpages'),
+  apfrom: z.string().optional(),
+  apto: z.string().optional(),
+  apprefix: z.string().optional(),
+  apnamespace: z.number().optional(),
+  apfilterredir: z.string().optional(),
+  apfilterlanglinks: z.string().optional(),
+  apminsize: z.number().optional(),
+  apmaxsize: z.number().optional(),
+  apprtype: z.string().optional(),
+  apprlevel: z.string().optional(),
+  apprfiltercascade: z.string().optional(),
+  apprexpiry: z.string().optional(),
+  aplimit: z.number().optional(),
+  apdir: z.string().optional(),
+});
+
+export const ExtractsParamsSchema = BaseApiParamsSchema.extend({
+  prop: z.literal('extracts'),
+  titles: z.string(),
+  explaintext: z.literal('').optional(),
+  exintro: z.literal('').optional(),
+  exlimit: z.number().optional(),
+  excharacters: z.number().optional(),
+  exchars: z.number().optional(),
+  exsectionformat: z.string().optional(),
+  exsentences: z.number().optional(),
+});
+
+// Add type exports
 export type WikimediaClientConfig = z.infer<typeof WikimediaClientConfigSchema>;
 export type PageInfo = z.infer<typeof PageInfoSchema>;
 export type Category = z.infer<typeof CategorySchema>;
@@ -408,4 +474,9 @@ export type ProtectionExpiry = z.infer<typeof ProtectionExpiry>;
 export type AllPagesOptions = z.infer<typeof AllPagesOptionsSchema>;
 export type ExtractFormatType = z.infer<typeof ExtractFormatType>;
 export type ExtractOptions = z.infer<typeof ExtractOptionsSchema>;
-export type Extract = z.infer<typeof ExtractSchema>; 
+export type Extract = z.infer<typeof ExtractSchema>;
+export type BaseApiParams = z.infer<typeof BaseApiParamsSchema>;
+export type SearchImagesParams = z.infer<typeof SearchImagesParamsSchema>;
+export type AllLinksParams = z.infer<typeof AllLinksParamsSchema>;
+export type AllPagesParams = z.infer<typeof AllPagesParamsSchema>;
+export type ExtractsParams = z.infer<typeof ExtractsParamsSchema>; 
