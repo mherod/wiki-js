@@ -403,17 +403,10 @@ export class WikimediaClient {
     const today = new Date();
     const thirtyDaysAgo = new Date(today.getTime() - 30 * 24 * 60 * 60 * 1000);
 
-    const start =
-      validatedOptions.start ??
-      thirtyDaysAgo.toISOString().slice(0, 10).replace(/-/g, '');
-    const end =
-      validatedOptions.end ??
-      today.toISOString().slice(0, 10).replace(/-/g, '');
+    const start = validatedOptions.start ?? thirtyDaysAgo.toISOString().slice(0, 10).replace(/-/g, '');
+    const end = validatedOptions.end ?? today.toISOString().slice(0, 10).replace(/-/g, '');
 
-    const encodedTitle = encodeURIComponent(title).replace(
-      /[!'()*]/g,
-      (c) => '%' + c.charCodeAt(0).toString(16).toUpperCase(),
-    );
+    const encodedTitle = encodeURIComponent(title).replace(/[!'()*]/g, c => '%' + c.charCodeAt(0).toString(16).toUpperCase());
 
     const response = await this.client.get(
       `https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/` +
@@ -452,14 +445,11 @@ export class WikimediaClient {
       rvuser: validatedOptions.user,
       rvexcludeuser: validatedOptions.excludeUser,
       rvtag: validatedOptions.tag,
-      rvprop: validatedOptions.properties?.join('|') ?? 
-        'ids|timestamp|flags|comment|size|user|userid',
+      rvprop: validatedOptions.properties?.join('|') ?? 'ids|timestamp|flags|comment|size|user|userid',
     };
 
     const response = await this.client.get('', {
-      params: Object.fromEntries(
-        Object.entries(params).filter(([_, v]) => v !== undefined)
-      ),
+      params: Object.fromEntries(Object.entries(params).filter(([_, v]) => v !== undefined)),
     });
 
     return createRevisionsResponseSchema().parse(response.data);

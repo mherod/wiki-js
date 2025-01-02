@@ -557,6 +557,7 @@ export const RevisionSchema = z.object({
 
 /**
  * Schema for revisions response
+ *
  * @returns A schema for the revisions response
  */
 export const createRevisionsResponseSchema = () =>
