@@ -16,6 +16,15 @@
   "files": [
     "dist"
   ],
+  "lint-staged": {
+    "*.{ts,tsx}": [
+      "eslint --fix",
+      "prettier --write"
+    ],
+    "*.{json,md}": [
+      "prettier --write"
+    ]
+  },
   "scripts": {
     "build": "tsup",
     "dev": "tsup --watch",
@@ -24,7 +33,7 @@
     "lint": "eslint src/**/*.ts --format=codeframe",
     "format": "prettier --write \"src/**/*.{ts,json,md}\" && eslint src/**/*.ts --fix",
     "prepublishOnly": "pnpm run clean && pnpm run test && pnpm run lint && pnpm run build",
-    "prepare": "pnpm run build",
+    "prepare": "pnpm run build && husky install",
     "clean": "rm -rf dist",
     "check-types": "tsc --noEmit",
     "fetch-test-data": "tsx scripts/fetch-test-data.ts"
@@ -50,6 +59,8 @@
     "node": ">=14.0.0"
   },
   "devDependencies": {
+    "@commitlint/cli": "^19.6.1",
+    "@commitlint/config-conventional": "^19.6.0",
     "@types/jest": "^29.5.14",
     "@types/node": "^22.10.3",
     "@typescript-eslint/eslint-plugin": "^8.19.0",
@@ -59,7 +70,9 @@
     "eslint-formatter-codeframe": "^7.32.1",
     "eslint-plugin-jsdoc": "^50.6.1",
     "eslint-plugin-prettier": "^5.2.1",
+    "husky": "^8.0.0",
     "jest": "^29.7.0",
+    "lint-staged": "^15.3.0",
     "prettier": "^3.4.2",
     "ts-jest": "^29.2.5",
     "ts-node": "^10.9.2",
