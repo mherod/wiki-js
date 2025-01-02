@@ -27,6 +27,72 @@ import {
 
 export * from './schemas';
 
+// API Parameter Types
+interface BaseApiParams {
+  action: string;
+  format: 'json';
+}
+
+interface SearchImagesParams extends BaseApiParams {
+  list: 'allimages';
+  aisearch?: string;
+  aisort?: string;
+  aidir?: string;
+  aifrom?: string;
+  aito?: string;
+  aistart?: string;
+  aiend?: string;
+  aiminsize?: number;
+  aimaxsize?: number;
+  aiuser?: string;
+  aifilterbots?: string;
+  aisha1?: string;
+  aiprop?: string;
+  ailimit?: number;
+}
+
+interface AllLinksParams extends BaseApiParams {
+  list: 'alllinks';
+  alfrom?: string;
+  alto?: string;
+  alprefix?: string;
+  alunique?: '';
+  alprop?: string;
+  alnamespace?: number;
+  allimit?: number;
+  aldir?: string;
+}
+
+interface AllPagesParams extends BaseApiParams {
+  list: 'allpages';
+  apfrom?: string;
+  apto?: string;
+  apprefix?: string;
+  apnamespace?: number;
+  apfilterredir?: string;
+  apfilterlanglinks?: string;
+  apminsize?: number;
+  apmaxsize?: number;
+  apprtype?: string;
+  apprlevel?: string;
+  apprfiltercascade?: string;
+  apprexpiry?: string;
+  aplimit?: number;
+  apdir?: string;
+}
+
+interface ExtractsParams extends BaseApiParams {
+  prop: 'extracts';
+  titles: string;
+  explaintext?: '';
+  exintro?: '';
+  exlimit?: number;
+  excharacters?: number;
+  exchars?: number;
+  exsectionformat?: string;
+  exsentences?: number;
+}
+
 export class WikimediaClient {
   private client: AxiosInstance;
   private baseURL: string;
@@ -173,7 +239,7 @@ export class WikimediaClient {
   async searchImages(query: string, options: ImageSearchOptions = {}) {
     const validatedOptions = ImageSearchOptionsSchema.parse(options);
     
-    const params: Record<string, any> = {
+    const params: SearchImagesParams = {
       action: 'query',
       list: 'allimages',
       format: 'json',
@@ -277,7 +343,7 @@ export class WikimediaClient {
   async getAllLinks(options: AllLinksOptions = {}) {
     const validatedOptions = AllLinksOptionsSchema.parse(options);
     
-    const params: Record<string, any> = {
+    const params: AllLinksParams = {
       action: 'query',
       list: 'alllinks',
       format: 'json',
@@ -327,7 +393,7 @@ export class WikimediaClient {
   async getAllPages(options: AllPagesOptions = {}) {
     const validatedOptions = AllPagesOptionsSchema.parse(options);
     
-    const params: Record<string, any> = {
+    const params: AllPagesParams = {
       action: 'query',
       list: 'allpages',
       format: 'json',
@@ -399,7 +465,7 @@ export class WikimediaClient {
   async getExtracts(titles: string | string[], options: ExtractOptions = {}) {
     const validatedOptions = ExtractOptionsSchema.parse(options);
     
-    const params: Record<string, any> = {
+    const params: ExtractsParams = {
       action: 'query',
       prop: 'extracts',
       titles: Array.isArray(titles) ? titles.join('|') : titles,
