@@ -1,0 +1,29 @@
+{
+  "batchcomplete": "",
+  "query": {
+    "pages": {
+      "26415635": {
+        "pageid": 26415635,
+        "ns": 0,
+        "title": "Node.js",
+        "contentmodel": "wikitext",
+        "pagelanguage": "en",
+        "pagelanguagehtmlcode": "en",
+        "pagelanguagedir": "ltr",
+        "touched": "2024-12-28T16:39:01Z",
+        "lastrevid": 1265311049,
+        "length": 35534,
+        "fullurl": "https://en.wikipedia.org/wiki/Node.js",
+        "editurl": "https://en.wikipedia.org/w/index.php?title=Node.js&action=edit",
+        "canonicalurl": "https://en.wikipedia.org/wiki/Node.js",
+        "displaytitle": "Node.js",
+        "pageprops": {
+          "jsonconfig_getdata": "1",
+          "page_image_free": "Node.js_logo.svg",
+          "wikibase-shortdesc": "JavaScript runtime environment",
+          "wikibase_item": "Q756100"
+        }
+      }
+    }
+  }
+}

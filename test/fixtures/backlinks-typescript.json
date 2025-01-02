@@ -1,0 +1,61 @@
+{
+  "batchcomplete": "",
+  "continue": {
+    "blcontinue": "0|18890",
+    "continue": "-||"
+  },
+  "query": {
+    "backlinks": [
+      {
+        "pageid": 2807,
+        "ns": 0,
+        "title": "Active Directory"
+      },
+      {
+        "pageid": 3747,
+        "ns": 0,
+        "title": "Bill Gates"
+      },
+      {
+        "pageid": 8506,
+        "ns": 0,
+        "title": "DirectX"
+      },
+      {
+        "pageid": 8743,
+        "ns": 0,
+        "title": "Document Object Model"
+      },
+      {
+        "pageid": 8996,
+        "ns": 0,
+        "title": "Dynamic HTML"
+      },
+      {
+        "pageid": 9845,
+        "ns": 0,
+        "title": "JavaScript"
+      },
+      {
+        "pageid": 11026,
+        "ns": 0,
+        "title": "List of programmers"
+      },
+      {
+        "pageid": 13087,
+        "ns": 0,
+        "title": "GW-BASIC"
+      },
+      {
+        "pageid": 17659,
+        "ns": 0,
+        "title": "Lionhead Studios"
+      },
+      {
+        "pageid": 17731,
+        "ns": 0,
+        "title": "LiveScript (programming language)"
+      }
+    ]
+  }
+}

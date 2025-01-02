@@ -1,0 +1,75 @@
+{
+  "batchcomplete": "",
+  "continue": {
+    "rccontinue": "20250102153918|1859420009",
+    "continue": "-||"
+  },
+  "query": {
+    "recentchanges": [
+      {
+        "type": "edit",
+        "ns": 0,
+        "title": "Le Ly Hayslip",
+        "pageid": 3256456,
+        "revid": 1266863659,
+        "old_revid": 1257837515,
+        "rcid": 1859420020,
+        "user": "Gjb0zWxOb",
+        "oldlen": 7554,
+        "newlen": 8155
+      },
+      {
+        "type": "categorize",
+        "ns": 14,
+        "title": "Category:Pages using WikiProject banner shell with unknown parameters",
+        "pageid": 57755271,
+        "revid": 1266863660,
+        "old_revid": 1199844734,
+        "rcid": 1859420018,
+        "user": "Cewbot",
+        "bot": "",
+        "oldlen": 0,
+        "newlen": 0
+      },
+      {
+        "type": "edit",
+        "ns": 1,
+        "title": "Talk:Carlo Benetti",
+        "pageid": 57755271,
+        "revid": 1266863660,
+        "old_revid": 1199844734,
+        "rcid": 1859420012,
+        "user": "Cewbot",
+        "bot": "",
+        "minor": "",
+        "oldlen": 122,
+        "newlen": 119
+      },
+      {
+        "type": "edit",
+        "ns": 0,
+        "title": "Balangiga massacre",
+        "pageid": 601262,
+        "revid": 1266863656,
+        "old_revid": 1264438489,
+        "rcid": 1859420013,
+        "user": "Wikibojopayne",
+        "minor": "",
+        "oldlen": 33117,
+        "newlen": 33116
+      },
+      {
+        "type": "edit",
+        "ns": 0,
+        "title": "The Chapman Family",
+        "pageid": 23117113,
+        "revid": 1266863657,
+        "old_revid": 1218671980,
+        "rcid": 1859420010,
+        "user": "William Avery",
+        "oldlen": 11334,
+        "newlen": 11315
+      }
+    ]
+  }
+}

@@ -1,0 +1,96 @@
+{
+  "warnings": {
+    "main": {
+      "*": "Unrecognized parameter: aisearch."
+    }
+  },
+  "batchcomplete": "",
+  "continue": {
+    "aicontinue": "!Haunu.ogg",
+    "continue": "-||"
+  },
+  "query": {
+    "allimages": [
+      {
+        "name": "!!!_(Chk_Chk_Chk)_-_One_Girl_One_Boy_cover_art.jpg",
+        "timestamp": "2017-12-31T06:16:58Z",
+        "user": "Theo's Little Bot",
+        "size": 31850,
+        "width": 316,
+        "height": 316,
+        "url": "https://upload.wikimedia.org/wikipedia/en/b/ba/%21%21%21_%28Chk_Chk_Chk%29_-_One_Girl_One_Boy_cover_art.jpg",
+        "descriptionurl": "https://en.wikipedia.org/wiki/File:!!!_(Chk_Chk_Chk)_-_One_Girl_One_Boy_cover_art.jpg",
+        "descriptionshorturl": "https://en.wikipedia.org/w/index.php?curid=49816251",
+        "mime": "image/jpeg",
+        "mediatype": "BITMAP",
+        "bitdepth": 8,
+        "ns": 6,
+        "title": "File:!!! (Chk Chk Chk) - One Girl One Boy cover art.jpg"
+      },
+      {
+        "name": "!!!_-_!!!_album_cover.jpg",
+        "timestamp": "2010-05-24T17:22:43Z",
+        "user": "LobStoR",
+        "size": 43672,
+        "width": 300,
+        "height": 300,
+        "url": "https://upload.wikimedia.org/wikipedia/en/5/5c/%21%21%21_-_%21%21%21_album_cover.jpg",
+        "descriptionurl": "https://en.wikipedia.org/wiki/File:!!!_-_!!!_album_cover.jpg",
+        "descriptionshorturl": "https://en.wikipedia.org/w/index.php?curid=14124672",
+        "mime": "image/jpeg",
+        "mediatype": "BITMAP",
+        "bitdepth": 8,
+        "ns": 6,
+        "title": "File:!!! - !!! album cover.jpg"
+      },
+      {
+        "name": "!!!_-_Wallop.png",
+        "timestamp": "2019-12-08T23:07:45Z",
+        "user": "I grieve in stereo",
+        "size": 118745,
+        "width": 300,
+        "height": 300,
+        "url": "https://upload.wikimedia.org/wikipedia/en/1/11/%21%21%21_-_Wallop.png",
+        "descriptionurl": "https://en.wikipedia.org/wiki/File:!!!_-_Wallop.png",
+        "descriptionshorturl": "https://en.wikipedia.org/w/index.php?curid=62534993",
+        "mime": "image/png",
+        "mediatype": "BITMAP",
+        "bitdepth": 8,
+        "ns": 6,
+        "title": "File:!!! - Wallop.png"
+      },
+      {
+        "name": "!0_Trombones_Like_2_Pianos.jpg",
+        "timestamp": "2016-10-12T06:02:55Z",
+        "user": "Theo's Little Bot",
+        "size": 25319,
+        "width": 316,
+        "height": 316,
+        "url": "https://upload.wikimedia.org/wikipedia/en/9/97/%210_Trombones_Like_2_Pianos.jpg",
+        "descriptionurl": "https://en.wikipedia.org/wiki/File:!0_Trombones_Like_2_Pianos.jpg",
+        "descriptionshorturl": "https://en.wikipedia.org/w/index.php?curid=51956677",
+        "mime": "image/jpeg",
+        "mediatype": "BITMAP",
+        "bitdepth": 8,
+        "ns": 6,
+        "title": "File:!0 Trombones Like 2 Pianos.jpg"
+      },
+      {
+        "name": "!ClaudiaPascoal.png",
+        "timestamp": "2020-08-15T17:52:39Z",
+        "user": "Greenock125",
+        "size": 26203,
+        "width": 300,
+        "height": 300,
+        "url": "https://upload.wikimedia.org/wikipedia/en/7/7b/%21ClaudiaPascoal.png",
+        "descriptionurl": "https://en.wikipedia.org/wiki/File:!ClaudiaPascoal.png",
+        "descriptionshorturl": "https://en.wikipedia.org/w/index.php?curid=64947528",
+        "mime": "image/png",
+        "mediatype": "BITMAP",
+        "bitdepth": 8,
+        "ns": 6,
+        "title": "File:!ClaudiaPascoal.png"
+      }
+    ]
+  }
+}

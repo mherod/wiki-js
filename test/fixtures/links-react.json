@@ -1,0 +1,1929 @@
+{
+  "batchcomplete": "",
+  "query": {
+    "pages": {
+      "44926137": {
+        "pageid": 44926137,
+        "ns": 0,
+        "title": "React (software)",
+        "links": [
+          {
+            "ns": 0,
+            "title": ".NET"
+          },
+          {
+            "ns": 0,
+            "title": "2020 Facebook ad boycotts"
+          },
+          {
+            "ns": 0,
+            "title": "2021 Facebook leak"
+          },
+          {
+            "ns": 0,
+            "title": "2021 Facebook outage"
+          },
+          {
+            "ns": 0,
+            "title": "AIDA/Web"
+          },
+          {
+            "ns": 0,
+            "title": "API"
+          },
+          {
+            "ns": 0,
+            "title": "ASP.NET"
+          },
+          {
+            "ns": 0,
+            "title": "ASP.NET AJAX"
+          },
+          {
+            "ns": 0,
+            "title": "ASP.NET Core"
+          },
+          {
+            "ns": 0,
+            "title": "ASP.NET Dynamic Data"
+          },
+          {
+            "ns": 0,
+            "title": "ASP.NET MVC"
+          },
+          {
+            "ns": 0,
+            "title": "ASP.NET Razor"
+          },
+          {
+            "ns": 0,
+            "title": "ASP.NET Web Forms"
+          },
+          {
+            "ns": 0,
+            "title": "ActionScript"
+          },
+          {
+            "ns": 0,
+            "title": "Activity stream"
+          },
+          {
+            "ns": 0,
+            "title": "Adam D'Angelo"
+          },
+          {
+            "ns": 0,
+            "title": "Adam Mosseri"
+          },
+          {
+            "ns": 0,
+            "title": "Adobe ColdFusion"
+          },
+          {
+            "ns": 0,
+            "title": "Afia Asantewaa Asare-Kyei"
+          },
+          {
+            "ns": 0,
+            "title": "Alan Rusbridger"
+          },
+          {
+            "ns": 0,
+            "title": "Alex Stamos"
+          },
+          {
+            "ns": 0,
+            "title": "Andrei Alexandrescu"
+          },
+          {
+            "ns": 0,
+            "title": "Andrew Bosworth"
+          },
+          {
+            "ns": 0,
+            "title": "Andrew McCollum"
+          },
+          {
+            "ns": 0,
+            "title": "Android (operating system)"
+          },
+          {
+            "ns": 0,
+            "title": "András Sajó"
+          },
+          {
+            "ns": 0,
+            "title": "AngularJS"
+          },
+          {
+            "ns": 0,
+            "title": "Angular (web framework)"
+          },
+          {
+            "ns": 0,
+            "title": "Anonymous function"
+          },
+          {
+            "ns": 0,
+            "title": "Apache Cassandra"
+          },
+          {
+            "ns": 0,
+            "title": "Apache Hive"
+          },
+          {
+            "ns": 0,
+            "title": "Apache License 2.0"
+          },
+          {
+            "ns": 0,
+            "title": "Apache Sling"
+          },
+          {
+            "ns": 0,
+            "title": "Apache Software Foundation"
+          },
+          {
+            "ns": 0,
+            "title": "Apache Struts"
+          },
+          {
+            "ns": 0,
+            "title": "Apache Tapestry"
+          },
+          {
+            "ns": 0,
+            "title": "Apache Thrift"
+          },
+          {
+            "ns": 0,
+            "title": "Apache Wicket"
+          },
+          {
+            "ns": 0,
+            "title": "AppFuse"
+          },
+          {
+            "ns": 0,
+            "title": "AppJet"
+          },
+          {
+            "ns": 0,
+            "title": "Asm.js"
+          },
+          {
+            "ns": 0,
+            "title": "Async/await"
+          },
+          {
+            "ns": 0,
+            "title": "Asynchronous module definition"
+          },
+          {
+            "ns": 0,
+            "title": "Atlas Solutions"
+          },
+          {
+            "ns": 0,
+            "title": "BSD licenses"
+          },
+          {
+            "ns": 0,
+            "title": "Backbone.js"
+          },
+          {
+            "ns": 0,
+            "title": "Base One Foundation Component Library"
+          },
+          {
+            "ns": 0,
+            "title": "Blake Ross"
+          },
+          {
+            "ns": 0,
+            "title": "Blazor"
+          },
+          {
+            "ns": 0,
+            "title": "Brendan Eich"
+          },
+          {
+            "ns": 0,
+            "title": "Bret Taylor"
+          },
+          {
+            "ns": 0,
+            "title": "Browser speed test"
+          },
+          {
+            "ns": 0,
+            "title": "Buck (software)"
+          },
+          {
+            "ns": 0,
+            "title": "Bun (software)"
+          },
+          {
+            "ns": 0,
+            "title": "C++"
+          },
+          {
+            "ns": 0,
+            "title": "CL-HTTP"
+          },
+          {
+            "ns": 0,
+            "title": "Caja project"
+          },
+          {
+            "ns": 0,
+            "title": "CakePHP"
+          },
+          {
+            "ns": 0,
+            "title": "Callback function"
+          },
+          {
+            "ns": 0,
+            "title": "Catalina Botero Marino"
+          },
+          {
+            "ns": 0,
+            "title": "Catalyst (software)"
+          },
+          {
+            "ns": 0,
+            "title": "Censorship of Facebook"
+          },
+          {
+            "ns": 0,
+            "title": "Chakra (JScript engine)"
+          },
+          {
+            "ns": 0,
+            "title": "Chakra (JavaScript engine)"
+          },
+          {
+            "ns": 0,
+            "title": "Chamath Palihapitiya"
+          },
+          {
+            "ns": 0,
+            "title": "Chan Zuckerberg Initiative"
+          },
+          {
+            "ns": 0,
+            "title": "Charlie Cheever"
+          },
+          {
+            "ns": 0,
+            "title": "CherryPy"
+          },
+          {
+            "ns": 0,
+            "title": "Chris Cox (manager)"
+          },
+          {
+            "ns": 0,
+            "title": "Chris Hughes"
+          },
+          {
+            "ns": 0,
+            "title": "Chris Kelly (entrepreneur)"
+          },
+          {
+            "ns": 0,
+            "title": "Client-side JavaScript"
+          },
+          {
+            "ns": 0,
+            "title": "CodeIgniter"
+          },
+          {
+            "ns": 0,
+            "title": "ColdBox Platform"
+          },
+          {
+            "ns": 0,
+            "title": "CommonJS"
+          },
+          {
+            "ns": 0,
+            "title": "Common Lisp"
+          },
+          {
+            "ns": 0,
+            "title": "Comparison of JavaScript-based web frameworks"
+          },
+          {
+            "ns": 0,
+            "title": "Comparison of JavaScript frameworks"
+          },
+          {
+            "ns": 0,
+            "title": "Comparison of server-side JavaScript solutions"
+          },
+          {
+            "ns": 0,
+            "title": "Comparison of server-side web frameworks"
+          },
+          {
+            "ns": 0,
+            "title": "Component-based software engineering"
+          },
+          {
+            "ns": 0,
+            "title": "Computing platform"
+          },
+          {
+            "ns": 0,
+            "title": "CppCMS"
+          },
+          {
+            "ns": 0,
+            "title": "Criticism of Facebook"
+          },
+          {
+            "ns": 0,
+            "title": "CubicWeb"
+          },
+          {
+            "ns": 0,
+            "title": "Dancer (software)"
+          },
+          {
+            "ns": 0,
+            "title": "David Ebersman"
+          },
+          {
+            "ns": 0,
+            "title": "David Wehner"
+          },
+          {
+            "ns": 0,
+            "title": "Declarative programming"
+          },
+          {
+            "ns": 0,
+            "title": "Deno (software)"
+          },
+          {
+            "ns": 0,
+            "title": "Digital diplomacy"
+          },
+          {
+            "ns": 0,
+            "title": "Django (web framework)"
+          },
+          {
+            "ns": 0,
+            "title": "Document Object Model"
+          },
+          {
+            "ns": 0,
+            "title": "Dojo Toolkit"
+          },
+          {
+            "ns": 0,
+            "title": "DotNetNuke"
+          },
+          {
+            "ns": 0,
+            "title": "Douglas Crockford"
+          },
+          {
+            "ns": 0,
+            "title": "Drew Houston"
+          },
+          {
+            "ns": 0,
+            "title": "Drogon (software)"
+          },
+          {
+            "ns": 0,
+            "title": "Drupal"
+          },
+          {
+            "ns": 0,
+            "title": "Dustin Moskovitz"
+          },
+          {
+            "ns": 0,
+            "title": "Dynamic HTML"
+          },
+          {
+            "ns": 0,
+            "title": "ECMAScript"
+          },
+          {
+            "ns": 0,
+            "title": "EZ Publish"
+          },
+          {
+            "ns": 0,
+            "title": "Echo (framework)"
+          },
+          {
+            "ns": 0,
+            "title": "Ecma International"
+          },
+          {
+            "ns": 0,
+            "title": "EdgeRank"
+          },
+          {
+            "ns": 0,
+            "title": "Eduardo Saverin"
+          },
+          {
+            "ns": 0,
+            "title": "Elixir (programming language)"
+          },
+          {
+            "ns": 0,
+            "title": "Elliot Schrage"
+          },
+          {
+            "ns": 0,
+            "title": "Ember.js"
+          },
+          {
+            "ns": 0,
+            "title": "Emi Palmor"
+          },
+          {
+            "ns": 0,
+            "title": "Endy Bayuni"
+          },
+          {
+            "ns": 0,
+            "title": "Erlang (programming language)"
+          },
+          {
+            "ns": 0,
+            "title": "Evelyn Aswad"
+          },
+          {
+            "ns": 0,
+            "title": "Event (computing)"
+          },
+          {
+            "ns": 0,
+            "title": "Express.js"
+          },
+          {
+            "ns": 0,
+            "title": "Express Wi-Fi"
+          },
+          {
+            "ns": 0,
+            "title": "Ext JS"
+          },
+          {
+            "ns": 0,
+            "title": "Facebook"
+          },
+          {
+            "ns": 0,
+            "title": "Facebook, Inc. v. Duguid"
+          },
+          {
+            "ns": 0,
+            "title": "Facebook Aquila"
+          },
+          {
+            "ns": 0,
+            "title": "Facebook Beacon"
+          },
+          {
+            "ns": 0,
+            "title": "Facebook Bluetooth Beacon"
+          },
+          {
+            "ns": 0,
+            "title": "Facebook Credits"
+          },
+          {
+            "ns": 0,
+            "title": "Facebook Dating"
+          },
+          {
+            "ns": 0,
+            "title": "Facebook F8"
+          },
+          {
+            "ns": 0,
+            "title": "Facebook Graph Search"
+          },
+          {
+            "ns": 0,
+            "title": "Facebook Home"
+          },
+          {
+            "ns": 0,
+            "title": "Facebook Instant Articles"
+          },
+          {
+            "ns": 0,
+            "title": "Facebook Paper"
+          },
+          {
+            "ns": 0,
+            "title": "Facebook Platform"
+          },
+          {
+            "ns": 0,
+            "title": "Facebook Query Language"
+          },
+          {
+            "ns": 0,
+            "title": "Facebook Safety Check"
+          },
+          {
+            "ns": 0,
+            "title": "Facebook Slingshot"
+          },
+          {
+            "ns": 0,
+            "title": "Facebook Stories"
+          },
+          {
+            "ns": 0,
+            "title": "Facebook Watch"
+          },
+          {
+            "ns": 0,
+            "title": "Facebook Zero"
+          },
+          {
+            "ns": 0,
+            "title": "Facebook content management controversies"
+          },
+          {
+            "ns": 0,
+            "title": "Facebook like button"
+          },
+          {
+            "ns": 0,
+            "title": "Facebook onion address"
+          },
+          {
+            "ns": 0,
+            "title": "Facebook–Cambridge Analytica data scandal"
+          },
+          {
+            "ns": 0,
+            "title": "Fan-gating"
+          },
+          {
+            "ns": 0,
+            "title": "FastAPI"
+          },
+          {
+            "ns": 0,
+            "title": "Fastify"
+          },
+          {
+            "ns": 0,
+            "title": "Fat-Free Framework"
+          },
+          {
+            "ns": 0,
+            "title": "Federal Trade Commission v. Meta Platforms, Inc."
+          },
+          {
+            "ns": 0,
+            "title": "Feed (Facebook)"
+          },
+          {
+            "ns": 0,
+            "title": "Flask (web framework)"
+          },
+          {
+            "ns": 0,
+            "title": "Force v. Facebook, Inc."
+          },
+          {
+            "ns": 0,
+            "title": "Fraley v. Facebook, Inc."
+          },
+          {
+            "ns": 0,
+            "title": "Frances Haugen"
+          },
+          {
+            "ns": 0,
+            "title": "Free and open-source software"
+          },
+          {
+            "ns": 0,
+            "title": "FriendFeed"
+          },
+          {
+            "ns": 0,
+            "title": "Friending and following"
+          },
+          {
+            "ns": 0,
+            "title": "Frontend and backend"
+          },
+          {
+            "ns": 0,
+            "title": "FuelPHP"
+          },
+          {
+            "ns": 0,
+            "title": "Gatsby (JavaScript framework)"
+          },
+          {
+            "ns": 0,
+            "title": "George Hotz"
+          },
+          {
+            "ns": 0,
+            "title": "Gideon Yu"
+          },
+          {
+            "ns": 0,
+            "title": "Giphy"
+          },
+          {
+            "ns": 0,
+            "title": "Google Closure Tools"
+          },
+          {
+            "ns": 0,
+            "title": "Google Web Toolkit"
+          },
+          {
+            "ns": 0,
+            "title": "Grails (framework)"
+          },
+          {
+            "ns": 0,
+            "title": "Grav (CMS)"
+          },
+          {
+            "ns": 0,
+            "title": "Grok (web framework)"
+          },
+          {
+            "ns": 0,
+            "title": "Groovy (programming language)"
+          },
+          {
+            "ns": 0,
+            "title": "Gyroscope (software)"
+          },
+          {
+            "ns": 0,
+            "title": "HHVM"
+          },
+          {
+            "ns": 0,
+            "title": "HTC First"
+          },
+          {
+            "ns": 0,
+            "title": "HTML"
+          },
+          {
+            "ns": 0,
+            "title": "Hack (programming language)"
+          },
+          {
+            "ns": 0,
+            "title": "Haskell"
+          },
+          {
+            "ns": 0,
+            "title": "Helle Thorning-Schmidt"
+          },
+          {
+            "ns": 0,
+            "title": "HipHop for PHP"
+          },
+          {
+            "ns": 0,
+            "title": "History of Facebook"
+          },
+          {
+            "ns": 0,
+            "title": "Hock Tan"
+          },
+          {
+            "ns": 0,
+            "title": "Hooking"
+          },
+          {
+            "ns": 0,
+            "title": "Horde (software)"
+          },
+          {
+            "ns": 0,
+            "title": "Htmx"
+          },
+          {
+            "ns": 0,
+            "title": "Hugo Barra"
+          },
+          {
+            "ns": 0,
+            "title": "Hyperlapse (application)"
+          },
+          {
+            "ns": 0,
+            "title": "ICEfaces"
+          },
+          {
+            "ns": 0,
+            "title": "IGTV"
+          },
+          {
+            "ns": 0,
+            "title": "IOS"
+          },
+          {
+            "ns": 0,
+            "title": "ISBN (identifier)"
+          },
+          {
+            "ns": 0,
+            "title": "Imperative programming"
+          },
+          {
+            "ns": 0,
+            "title": "In-memory processing"
+          },
+          {
+            "ns": 0,
+            "title": "InScript (JavaScript engine)"
+          },
+          {
+            "ns": 0,
+            "title": "Infer Static Analyzer"
+          },
+          {
+            "ns": 0,
+            "title": "InfoWorld"
+          },
+          {
+            "ns": 0,
+            "title": "Inheritance (object-oriented programming)"
+          },
+          {
+            "ns": 0,
+            "title": "Initial public offering of Facebook"
+          },
+          {
+            "ns": 0,
+            "title": "Instagram"
+          },
+          {
+            "ns": 0,
+            "title": "Internet.org"
+          },
+          {
+            "ns": 0,
+            "title": "JBoss Seam"
+          },
+          {
+            "ns": 0,
+            "title": "JHipster"
+          },
+          {
+            "ns": 0,
+            "title": "JQuery"
+          },
+          {
+            "ns": 0,
+            "title": "JSDoc"
+          },
+          {
+            "ns": 0,
+            "title": "JSGI"
+          },
+          {
+            "ns": 0,
+            "title": "JSHint"
+          },
+          {
+            "ns": 0,
+            "title": "JSLint"
+          },
+          {
+            "ns": 0,
+            "title": "JSON"
+          },
+          {
+            "ns": 0,
+            "title": "JSX (JavaScript)"
+          },
+          {
+            "ns": 0,
+            "title": "JScript"
+          },
+          {
+            "ns": 0,
+            "title": "JScript .NET"
+          },
+          {
+            "ns": 0,
+            "title": "JWt (Java web toolkit)"
+          },
+          {
+            "ns": 0,
+            "title": "Jakarta Faces"
+          },
+          {
+            "ns": 0,
+            "title": "Jamal Greene"
+          },
+          {
+            "ns": 0,
+            "title": "JavaScript"
+          },
+          {
+            "ns": 0,
+            "title": "JavaScript Style Sheets"
+          },
+          {
+            "ns": 0,
+            "title": "JavaScript engine"
+          },
+          {
+            "ns": 0,
+            "title": "JavaScript libraries"
+          },
+          {
+            "ns": 0,
+            "title": "JavaScript library"
+          },
+          {
+            "ns": 0,
+            "title": "JavaScript templating"
+          },
+          {
+            "ns": 0,
+            "title": "Java (software platform)"
+          },
+          {
+            "ns": 0,
+            "title": "Javier Olivan"
+          },
+          {
+            "ns": 0,
+            "title": "Jaxer"
+          },
+          {
+            "ns": 0,
+            "title": "Jennifer Gillian Newstead"
+          },
+          {
+            "ns": 0,
+            "title": "Joe Lockhart"
+          },
+          {
+            "ns": 0,
+            "title": "John Carmack"
+          },
+          {
+            "ns": 0,
+            "title": "John D. Arnold"
+          },
+          {
+            "ns": 0,
+            "title": "John Resig"
+          },
+          {
+            "ns": 0,
+            "title": "John Samples"
+          },
+          {
+            "ns": 0,
+            "title": "Joomla"
+          },
+          {
+            "ns": 0,
+            "title": "Julie Owono"
+          },
+          {
+            "ns": 0,
+            "title": "KJS (software)"
+          },
+          {
+            "ns": 0,
+            "title": "Kate O'Regan"
+          },
+          {
+            "ns": 0,
+            "title": "Katherine Chen"
+          },
+          {
+            "ns": 0,
+            "title": "Kenji Yoshino"
+          },
+          {
+            "ns": 0,
+            "title": "Knockout.js"
+          },
+          {
+            "ns": 0,
+            "title": "Knockout (web framework)"
+          },
+          {
+            "ns": 0,
+            "title": "Laminas"
+          },
+          {
+            "ns": 0,
+            "title": "Laravel"
+          },
+          {
+            "ns": 0,
+            "title": "Lars Rasmussen (software developer)"
+          },
+          {
+            "ns": 0,
+            "title": "Lawsuits involving Meta Platforms"
+          },
+          {
+            "ns": 0,
+            "title": "Li3 (software)"
+          },
+          {
+            "ns": 0,
+            "title": "Lift (web framework)"
+          },
+          {
+            "ns": 0,
+            "title": "Lint (software)"
+          },
+          {
+            "ns": 0,
+            "title": "List of Ajax frameworks"
+          },
+          {
+            "ns": 0,
+            "title": "List of ECMAScript engines"
+          },
+          {
+            "ns": 0,
+            "title": "List of Facebook Watch original programming"
+          },
+          {
+            "ns": 0,
+            "title": "List of Facebook features"
+          },
+          {
+            "ns": 0,
+            "title": "List of JavaScript libraries"
+          },
+          {
+            "ns": 0,
+            "title": "List of mergers and acquisitions by Meta Platforms"
+          },
+          {
+            "ns": 0,
+            "title": "List of most-followed Facebook pages"
+          },
+          {
+            "ns": 0,
+            "title": "List of most-followed Instagram accounts"
+          },
+          {
+            "ns": 0,
+            "title": "List of most-liked Instagram posts"
+          },
+          {
+            "ns": 0,
+            "title": "Lively Kernel"
+          },
+          {
+            "ns": 0,
+            "title": "Lookalike audience"
+          },
+          {
+            "ns": 0,
+            "title": "MIT License"
+          },
+          {
+            "ns": 0,
+            "title": "MODX"
+          },
+          {
+            "ns": 0,
+            "title": "M (virtual assistant)"
+          },
+          {
+            "ns": 0,
+            "title": "Maina Kiai"
+          },
+          {
+            "ns": 0,
+            "title": "Mapillary"
+          },
+          {
+            "ns": 0,
+            "title": "Marc Andreessen"
+          },
+          {
+            "ns": 0,
+            "title": "Mark Zuckerberg"
+          },
+          {
+            "ns": 0,
+            "title": "Marne Levine"
+          },
+          {
+            "ns": 0,
+            "title": "Matt Cohler"
+          },
+          {
+            "ns": 0,
+            "title": "Maypole framework"
+          },
+          {
+            "ns": 0,
+            "title": "Merb"
+          },
+          {
+            "ns": 0,
+            "title": "Messenger (software)"
+          },
+          {
+            "ns": 0,
+            "title": "Messenger Kids"
+          },
+          {
+            "ns": 0,
+            "title": "Meta AI"
+          },
+          {
+            "ns": 0,
+            "title": "Meta Horizon OS"
+          },
+          {
+            "ns": 0,
+            "title": "Meta Platforms"
+          },
+          {
+            "ns": 0,
+            "title": "Meta Portal"
+          },
+          {
+            "ns": 0,
+            "title": "Meta Quest"
+          },
+          {
+            "ns": 0,
+            "title": "Meta Quest 3"
+          },
+          {
+            "ns": 0,
+            "title": "Meta Quest Pro"
+          },
+          {
+            "ns": 0,
+            "title": "Meta and unions"
+          },
+          {
+            "ns": 0,
+            "title": "Meteor (web framework)"
+          },
+          {
+            "ns": 0,
+            "title": "Michael W. McConnell"
+          },
+          {
+            "ns": 0,
+            "title": "Midgard (software)"
+          },
+          {
+            "ns": 0,
+            "title": "Mike Schroepfer"
+          },
+          {
+            "ns": 0,
+            "title": "MochiKit"
+          },
+          {
+            "ns": 0,
+            "title": "Model–view–controller"
+          },
+          {
+            "ns": 0,
+            "title": "Model–view–viewmodel"
+          },
+          {
+            "ns": 0,
+            "title": "Mojolicious"
+          },
+          {
+            "ns": 0,
+            "title": "MonoRail (software)"
+          },
+          {
+            "ns": 0,
+            "title": "MooTools"
+          },
+          {
+            "ns": 0,
+            "title": "Mustache (template system)"
+          },
+          {
+            "ns": 0,
+            "title": "MyRocks"
+          },
+          {
+            "ns": 0,
+            "title": "Nancy Killefer"
+          },
+          {
+            "ns": 0,
+            "title": "Naomi Gleit"
+          },
+          {
+            "ns": 0,
+            "title": "Nashorn (JavaScript engine)"
+          },
+          {
+            "ns": 0,
+            "title": "Neos Flow"
+          },
+          {
+            "ns": 0,
+            "title": "NestJS"
+          },
+          {
+            "ns": 0,
+            "title": "Nevow"
+          },
+          {
+            "ns": 0,
+            "title": "News Feed"
+          },
+          {
+            "ns": 0,
+            "title": "Next.js"
+          },
+          {
+            "ns": 0,
+            "title": "Nick Clegg"
+          },
+          {
+            "ns": 0,
+            "title": "Nicola Mendelsohn"
+          },
+          {
+            "ns": 0,
+            "title": "Nighat Dad"
+          },
+          {
+            "ns": 0,
+            "title": "Node.js"
+          },
+          {
+            "ns": 0,
+            "title": "Nuxt.js"
+          },
+          {
+            "ns": 0,
+            "title": "Observer pattern"
+          },
+          {
+            "ns": 0,
+            "title": "Oculus Go"
+          },
+          {
+            "ns": 0,
+            "title": "Oculus Quest"
+          },
+          {
+            "ns": 0,
+            "title": "Oculus Rift"
+          },
+          {
+            "ns": 0,
+            "title": "Oculus Rift CV1"
+          },
+          {
+            "ns": 0,
+            "title": "Oculus Rift S"
+          },
+          {
+            "ns": 0,
+            "title": "Oculus Touch"
+          },
+          {
+            "ns": 0,
+            "title": "Onavo"
+          },
+          {
+            "ns": 0,
+            "title": "OpenACS"
+          },
+          {
+            "ns": 0,
+            "title": "OpenUI5"
+          },
+          {
+            "ns": 0,
+            "title": "Open Compute Project"
+          },
+          {
+            "ns": 0,
+            "title": "Oracle Application Express"
+          },
+          {
+            "ns": 0,
+            "title": "Oversight Board (Meta)"
+          },
+          {
+            "ns": 0,
+            "title": "Owen Van Natta"
+          },
+          {
+            "ns": 0,
+            "title": "PHP"
+          },
+          {
+            "ns": 0,
+            "title": "PHP-Fusion"
+          },
+          {
+            "ns": 0,
+            "title": "PHP-Nuke"
+          },
+          {
+            "ns": 0,
+            "title": "PL/SQL"
+          },
+          {
+            "ns": 0,
+            "title": "PRADO (framework)"
+          },
+          {
+            "ns": 0,
+            "title": "Packt Publishing"
+          },
+          {
+            "ns": 0,
+            "title": "Padrino (web framework)"
+          },
+          {
+            "ns": 0,
+            "title": "Pamela S. Karlan"
+          },
+          {
+            "ns": 0,
+            "title": "Paul G. Haaga Jr."
+          },
+          {
+            "ns": 0,
+            "title": "PayPal"
+          },
+          {
+            "ns": 0,
+            "title": "Perl"
+          },
+          {
+            "ns": 0,
+            "title": "Peter Thiel"
+          },
+          {
+            "ns": 0,
+            "title": "Phabricator"
+          },
+          {
+            "ns": 0,
+            "title": "Phalcon (framework)"
+          },
+          {
+            "ns": 0,
+            "title": "Phoenix (web framework)"
+          },
+          {
+            "ns": 0,
+            "title": "Play Framework"
+          },
+          {
+            "ns": 0,
+            "title": "Pop PHP Framework"
+          },
+          {
+            "ns": 0,
+            "title": "Presto (layout engine)"
+          },
+          {
+            "ns": 0,
+            "title": "Priscilla Chan"
+          },
+          {
+            "ns": 0,
+            "title": "Privacy concerns with Facebook"
+          },
+          {
+            "ns": 0,
+            "title": "ProcessWire"
+          },
+          {
+            "ns": 0,
+            "title": "Programmer"
+          },
+          {
+            "ns": 0,
+            "title": "Programming paradigm"
+          },
+          {
+            "ns": 0,
+            "title": "Prototype JavaScript Framework"
+          },
+          {
+            "ns": 0,
+            "title": "Pull request"
+          },
+          {
+            "ns": 0,
+            "title": "Pyjs"
+          },
+          {
+            "ns": 0,
+            "title": "Pylons project"
+          },
+          {
+            "ns": 0,
+            "title": "Python (programming language)"
+          },
+          {
+            "ns": 0,
+            "title": "Qcodo"
+          },
+          {
+            "ns": 0,
+            "title": "Qooxdoo"
+          },
+          {
+            "ns": 0,
+            "title": "QtScript"
+          },
+          {
+            "ns": 0,
+            "title": "Quest 2"
+          },
+          {
+            "ns": 0,
+            "title": "Quixote (web framework)"
+          },
+          {
+            "ns": 0,
+            "title": "R (programming language)"
+          },
+          {
+            "ns": 0,
+            "title": "Randi Zuckerberg"
+          },
+          {
+            "ns": 0,
+            "title": "Ray-Ban Stories"
+          },
+          {
+            "ns": 0,
+            "title": "React (web framework)"
+          },
+          {
+            "ns": 0,
+            "title": "React Native"
+          },
+          {
+            "ns": 0,
+            "title": "React Router"
+          },
+          {
+            "ns": 0,
+            "title": "Reality Labs"
+          },
+          {
+            "ns": 0,
+            "title": "Reblogging"
+          },
+          {
+            "ns": 0,
+            "title": "Redux (JavaScript library)"
+          },
+          {
+            "ns": 0,
+            "title": "Remix (web framework)"
+          },
+          {
+            "ns": 0,
+            "title": "Remote Application Platform"
+          },
+          {
+            "ns": 0,
+            "title": "Repository (version control)"
+          },
+          {
+            "ns": 0,
+            "title": "Rhino (JavaScript engine)"
+          },
+          {
+            "ns": 0,
+            "title": "Robert M. Kimmitt"
+          },
+          {
+            "ns": 0,
+            "title": "Robert Post (law professor)"
+          },
+          {
+            "ns": 0,
+            "title": "Rocket (web framework)"
+          },
+          {
+            "ns": 0,
+            "title": "RocksDB"
+          },
+          {
+            "ns": 0,
+            "title": "Ronaldo Lemos"
+          },
+          {
+            "ns": 0,
+            "title": "Routing"
+          },
+          {
+            "ns": 0,
+            "title": "Ruby (programming language)"
+          },
+          {
+            "ns": 0,
+            "title": "Ruby on Rails"
+          },
+          {
+            "ns": 0,
+            "title": "Rust (programming language)"
+          },
+          {
+            "ns": 0,
+            "title": "SWFObject"
+          },
+          {
+            "ns": 0,
+            "title": "Scala (programming language)"
+          },
+          {
+            "ns": 0,
+            "title": "Scalatra"
+          },
+          {
+            "ns": 0,
+            "title": "Scribe (log server)"
+          },
+          {
+            "ns": 0,
+            "title": "Sean Parker"
+          },
+          {
+            "ns": 0,
+            "title": "Search engine optimization"
+          },
+          {
+            "ns": 0,
+            "title": "Seaside (software)"
+          },
+          {
+            "ns": 0,
+            "title": "Sencha Touch"
+          },
+          {
+            "ns": 0,
+            "title": "Servant (web framework)"
+          },
+          {
+            "ns": 0,
+            "title": "Server-side JavaScript"
+          },
+          {
+            "ns": 0,
+            "title": "Server-side rendering"
+          },
+          {
+            "ns": 0,
+            "title": "Server-side scripting"
+          },
+          {
+            "ns": 0,
+            "title": "Sheryl Sandberg"
+          },
+          {
+            "ns": 0,
+            "title": "Shiny (web framework)"
+          },
+          {
+            "ns": 0,
+            "title": "Silverstripe CMS"
+          },
+          {
+            "ns": 0,
+            "title": "Sinatra (software)"
+          },
+          {
+            "ns": 0,
+            "title": "Single-page application"
+          },
+          {
+            "ns": 0,
+            "title": "Single source of truth"
+          },
+          {
+            "ns": 0,
+            "title": "Smalltalk"
+          },
+          {
+            "ns": 0,
+            "title": "Snap (web framework)"
+          },
+          {
+            "ns": 0,
+            "title": "Social graph"
+          },
+          {
+            "ns": 0,
+            "title": "Software architecture"
+          },
+          {
+            "ns": 0,
+            "title": "Software categories"
+          },
+          {
+            "ns": 0,
+            "title": "Software framework"
+          },
+          {
+            "ns": 0,
+            "title": "Software license"
+          },
+          {
+            "ns": 0,
+            "title": "Software release life cycle"
+          },
+          {
+            "ns": 0,
+            "title": "SpiderMonkey"
+          },
+          {
+            "ns": 0,
+            "title": "Spring Framework"
+          },
+          {
+            "ns": 0,
+            "title": "SproutCore"
+          },
+          {
+            "ns": 0,
+            "title": "Spry framework"
+          },
+          {
+            "ns": 0,
+            "title": "Sputnik (JavaScript conformance test)"
+          },
+          {
+            "ns": 0,
+            "title": "Stephen Neal (lawyer)"
+          },
+          {
+            "ns": 0,
+            "title": "Stripes (framework)"
+          },
+          {
+            "ns": 0,
+            "title": "Sudhir Krishnaswamy"
+          },
+          {
+            "ns": 0,
+            "title": "Suzanne Nossel"
+          },
+          {
+            "ns": 0,
+            "title": "Svelte"
+          },
+          {
+            "ns": 0,
+            "title": "Symfony"
+          },
+          {
+            "ns": 0,
+            "title": "TACTIC (web framework)"
+          },
+          {
+            "ns": 0,
+            "title": "TYPO3"
+          },
+          {
+            "ns": 0,
+            "title": "Tamarin (software)"
+          },
+          {
+            "ns": 0,
+            "title": "Tawakkol Karman"
+          },
+          {
+            "ns": 0,
+            "title": "Tbh (app)"
+          },
+          {
+            "ns": 0,
+            "title": "Tcl"
+          },
+          {
+            "ns": 0,
+            "title": "TechCrunch"
+          },
+          {
+            "ns": 0,
+            "title": "Ted Ullyot"
+          },
+          {
+            "ns": 0,
+            "title": "Telecom Infra Project"
+          },
+          {
+            "ns": 0,
+            "title": "The Accidental Billionaires"
+          },
+          {
+            "ns": 0,
+            "title": "The Facebook Effect"
+          },
+          {
+            "ns": 0,
+            "title": "The Social Network"
+          },
+          {
+            "ns": 0,
+            "title": "Thomas Reardon"
+          },
+          {
+            "ns": 0,
+            "title": "Threads (social network)"
+          },
+          {
+            "ns": 0,
+            "title": "Timeline of Instagram"
+          },
+          {
+            "ns": 0,
+            "title": "Timeline of WhatsApp"
+          },
+          {
+            "ns": 0,
+            "title": "Tony Xu"
+          },
+          {
+            "ns": 0,
+            "title": "Tornado (web server)"
+          },
+          {
+            "ns": 0,
+            "title": "TurboGears"
+          },
+          {
+            "ns": 0,
+            "title": "TypeScript"
+          },
+          {
+            "ns": 0,
+            "title": "Umbraco"
+          },
+          {
+            "ns": 0,
+            "title": "Underscore.js"
+          },
+          {
+            "ns": 0,
+            "title": "Universal Windows Platform"
+          },
+          {
+            "ns": 0,
+            "title": "User interface"
+          },
+          {
+            "ns": 0,
+            "title": "V8 (JavaScript engine)"
+          },
+          {
+            "ns": 0,
+            "title": "Vaadin"
+          },
+          {
+            "ns": 0,
+            "title": "Vert.x"
+          },
+          {
+            "ns": 0,
+            "title": "Virtual DOM"
+          },
+          {
+            "ns": 0,
+            "title": "Vue.js"
+          },
+          {
+            "ns": 0,
+            "title": "WMLScript"
+          },
+          {
+            "ns": 0,
+            "title": "WaveGroup Sound"
+          },
+          {
+            "ns": 0,
+            "title": "WaveMaker"
+          },
+          {
+            "ns": 0,
+            "title": "Wayback Machine"
+          },
+          {
+            "ns": 0,
+            "title": "Web2py"
+          },
+          {
+            "ns": 0,
+            "title": "WebGUI"
+          },
+          {
+            "ns": 0,
+            "title": "WebKit"
+          },
+          {
+            "ns": 0,
+            "title": "WebSharper"
+          },
+          {
+            "ns": 0,
+            "title": "Web Components"
+          },
+          {
+            "ns": 0,
+            "title": "Web framework"
+          },
+          {
+            "ns": 0,
+            "title": "Web platform"
+          },
+          {
+            "ns": 0,
+            "title": "WhatsApp"
+          },
+          {
+            "ns": 0,
+            "title": "Willow Village"
+          },
+          {
+            "ns": 0,
+            "title": "Wirehog"
+          },
+          {
+            "ns": 0,
+            "title": "Within (company)"
+          },
+          {
+            "ns": 0,
+            "title": "WordPress"
+          },
+          {
+            "ns": 0,
+            "title": "Workplace (software)"
+          },
+          {
+            "ns": 0,
+            "title": "Wt (web toolkit)"
+          },
+          {
+            "ns": 0,
+            "title": "XHP"
+          },
+          {
+            "ns": 0,
+            "title": "XOOPS"
+          },
+          {
+            "ns": 0,
+            "title": "Yaws (web server)"
+          },
+          {
+            "ns": 0,
+            "title": "Yesod (web framework)"
+          },
+          {
+            "ns": 0,
+            "title": "Yii"
+          },
+          {
+            "ns": 0,
+            "title": "Yishan Wong"
+          },
+          {
+            "ns": 0,
+            "title": "Young v. Facebook, Inc."
+          },
+          {
+            "ns": 0,
+            "title": "ZK (framework)"
+          },
+          {
+            "ns": 0,
+            "title": "Zope"
+          },
+          {
+            "ns": 1,
+            "title": "Talk:React (software)"
+          },
+          {
+            "ns": 4,
+            "title": "Wikipedia:Citing sources"
+          },
+          {
+            "ns": 4,
+            "title": "Wikipedia:Manual of Style/Dates and numbers"
+          },
+          {
+            "ns": 4,
+            "title": "Wikipedia:Reliable sources"
+          },
+          {
+            "ns": 4,
+            "title": "Wikipedia:Verifiability"
+          },
+          {
+            "ns": 10,
+            "title": "Template:ECMAScript"
+          },
+          {
+            "ns": 10,
+            "title": "Template:JS templating"
+          },
+          {
+            "ns": 10,
+            "title": "Template:Meta Platforms"
+          },
+          {
+            "ns": 10,
+            "title": "Template:Web frameworks"
+          },
+          {
+            "ns": 11,
+            "title": "Template talk:ECMAScript"
+          },
+          {
+            "ns": 11,
+            "title": "Template talk:JS templating"
+          },
+          {
+            "ns": 11,
+            "title": "Template talk:Meta Platforms"
+          },
+          {
+            "ns": 11,
+            "title": "Template talk:Web frameworks"
+          },
+          {
+            "ns": 12,
+            "title": "Help:Authority control"
+          },
+          {
+            "ns": 12,
+            "title": "Help:Maintenance template removal"
+          },
+          {
+            "ns": 12,
+            "title": "Help:Referencing for beginners"
+          },
+          {
+            "ns": 14,
+            "title": "Category:Articles needing additional references from May 2024"
+          },
+          {
+            "ns": 14,
+            "title": "Category:Articles with self-published sources from May 2024"
+          },
+          {
+            "ns": 14,
+            "title": "Category:Python (programming language) web frameworks"
+          },
+          {
+            "ns": 14,
+            "title": "Category:Wikipedia articles in need of updating from June 2018"
+          },
+          {
+            "ns": 100,
+            "title": "Portal:Free and open-source software"
+          }
+        ]
+      }
+    }
+  },
+  "limits": {
+    "links": 500
+  }
+}

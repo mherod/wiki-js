@@ -1,0 +1,594 @@
+{
+  "batchcomplete": "",
+  "query": {
+    "normalized": [
+      {
+        "from": "File:Artificial_neural_network.svg",
+        "to": "File:Artificial neural network.svg"
+      }
+    ],
+    "pages": {
+      "-1": {
+        "ns": 6,
+        "title": "File:Artificial neural network.svg",
+        "missing": "",
+        "known": "",
+        "globalusage": [
+          {
+            "title": "Intelichencia_artificial",
+            "wiki": "an.wikipedia.org",
+            "url": "https://an.wikipedia.org/wiki/Intelichencia_artificial"
+          },
+          {
+            "title": "Süni_neyron_şəbəkələr",
+            "wiki": "az.wikipedia.org",
+            "url": "https://az.wikipedia.org/wiki/S%C3%BCni_neyron_%C5%9F%C9%99b%C9%99k%C9%99l%C9%99r"
+          },
+          {
+            "title": "RankBrain",
+            "wiki": "bar.wikipedia.org",
+            "url": "https://bar.wikipedia.org/wiki/RankBrain"
+          },
+          {
+            "title": "ব্যবহারকারী:Al-mumtahinah/কৃত্রিম_বুদ্ধিমত্তা",
+            "wiki": "bn.wikipedia.org",
+            "url": "https://bn.wikipedia.org/wiki/%E0%A6%AC%E0%A7%8D%E0%A6%AF%E0%A6%AC%E0%A6%B9%E0%A6%BE%E0%A6%B0%E0%A6%95%E0%A6%BE%E0%A6%B0%E0%A7%80:Al-mumtahinah/%E0%A6%95%E0%A7%83%E0%A6%A4%E0%A7%8D%E0%A6%B0%E0%A6%BF%E0%A6%AE_%E0%A6%AC%E0%A7%81%E0%A6%A6%E0%A7%8D%E0%A6%A7%E0%A6%BF%E0%A6%AE%E0%A6%A4%E0%A7%8D%E0%A6%A4%E0%A6%BE"
+          },
+          {
+            "title": "Connexionisme",
+            "wiki": "ca.wikipedia.org",
+            "url": "https://ca.wikipedia.org/wiki/Connexionisme"
+          },
+          {
+            "title": "Flerlags-perceptron",
+            "wiki": "da.wikipedia.org",
+            "url": "https://da.wikipedia.org/wiki/Flerlags-perceptron"
+          },
+          {
+            "title": "Artificial_intelligence",
+            "wiki": "en.wikipedia.org",
+            "url": "https://en.wikipedia.org/wiki/Artificial_intelligence"
+          },
+          {
+            "title": "Neural_network_(machine_learning)",
+            "wiki": "en.wikipedia.org",
+            "url": "https://en.wikipedia.org/wiki/Neural_network_(machine_learning)"
+          },
+          {
+            "title": "Connectionism",
+            "wiki": "en.wikipedia.org",
+            "url": "https://en.wikipedia.org/wiki/Connectionism"
+          },
+          {
+            "title": "User:Cburnett/GFDL_images",
+            "wiki": "en.wikipedia.org",
+            "url": "https://en.wikipedia.org/wiki/User:Cburnett/GFDL_images"
+          },
+          {
+            "title": "User:Paskari/page2",
+            "wiki": "en.wikipedia.org",
+            "url": "https://en.wikipedia.org/wiki/User:Paskari/page2"
+          },
+          {
+            "title": "User:Rich_Farmbrough/temp59",
+            "wiki": "en.wikipedia.org",
+            "url": "https://en.wikipedia.org/wiki/User:Rich_Farmbrough/temp59"
+          },
+          {
+            "title": "Theories_of_second-language_acquisition",
+            "wiki": "en.wikipedia.org",
+            "url": "https://en.wikipedia.org/wiki/Theories_of_second-language_acquisition"
+          },
+          {
+            "title": "User:Lms.sworth/sandbox",
+            "wiki": "en.wikipedia.org",
+            "url": "https://en.wikipedia.org/wiki/User:Lms.sworth/sandbox"
+          },
+          {
+            "title": "User:Mdd/Network_diagram",
+            "wiki": "en.wikipedia.org",
+            "url": "https://en.wikipedia.org/wiki/User:Mdd/Network_diagram"
+          },
+          {
+            "title": "User:Karmwiki/sandbox",
+            "wiki": "en.wikipedia.org",
+            "url": "https://en.wikipedia.org/wiki/User:Karmwiki/sandbox"
+          },
+          {
+            "title": "Artificial_Neural_Networks/Neural_Network_Basics",
+            "wiki": "en.wikibooks.org",
+            "url": "https://en.wikibooks.org/wiki/Artificial_Neural_Networks/Neural_Network_Basics"
+          },
+          {
+            "title": "Artificial_Neural_Networks/Print_Version",
+            "wiki": "en.wikibooks.org",
+            "url": "https://en.wikibooks.org/wiki/Artificial_Neural_Networks/Print_Version"
+          },
+          {
+            "title": "Psycholinguistics/Connectionist_Models",
+            "wiki": "en.wikiversity.org",
+            "url": "https://en.wikiversity.org/wiki/Psycholinguistics/Connectionist_Models"
+          },
+          {
+            "title": "Artificial_neural_network",
+            "wiki": "en.wikiversity.org",
+            "url": "https://en.wikiversity.org/wiki/Artificial_neural_network"
+          },
+          {
+            "title": "پیوندگرایی_(شناختی)",
+            "wiki": "fa.wikipedia.org",
+            "url": "https://fa.wikipedia.org/wiki/%D9%BE%DB%8C%D9%88%D9%86%D8%AF%DA%AF%D8%B1%D8%A7%DB%8C%DB%8C_(%D8%B4%D9%86%D8%A7%D8%AE%D8%AA%DB%8C)"
+          },
+          {
+            "title": "Utilisateur:Psychoslave/prérequis",
+            "wiki": "fr.wikipedia.org",
+            "url": "https://fr.wikipedia.org/wiki/Utilisateur:Psychoslave/pr%C3%A9requis"
+          },
+          {
+            "title": "רשת_עצבית_מלאכותית",
+            "wiki": "he.wikipedia.org",
+            "url": "https://he.wikipedia.org/wiki/%D7%A8%D7%A9%D7%AA_%D7%A2%D7%A6%D7%91%D7%99%D7%AA_%D7%9E%D7%9C%D7%90%D7%9B%D7%95%D7%AA%D7%99%D7%AA"
+          },
+          {
+            "title": "Umjetna_neuronska_mreža",
+            "wiki": "hr.wikipedia.org",
+            "url": "https://hr.wikipedia.org/wiki/Umjetna_neuronska_mre%C5%BEa"
+          },
+          {
+            "title": "Արհեստական_բանականություն",
+            "wiki": "hy.wikipedia.org",
+            "url": "https://hy.wikipedia.org/wiki/%D4%B1%D6%80%D5%B0%D5%A5%D5%BD%D5%BF%D5%A1%D5%AF%D5%A1%D5%B6_%D5%A2%D5%A1%D5%B6%D5%A1%D5%AF%D5%A1%D5%B6%D5%B8%D6%82%D5%A9%D5%B5%D5%B8%D6%82%D5%B6"
+          },
+          {
+            "title": "Jaringan_saraf_tiruan",
+            "wiki": "id.wikipedia.org",
+            "url": "https://id.wikipedia.org/wiki/Jaringan_saraf_tiruan"
+          },
+          {
+            "title": "Connessionismo",
+            "wiki": "it.wikipedia.org",
+            "url": "https://it.wikipedia.org/wiki/Connessionismo"
+          },
+          {
+            "title": "Rete_neurale_artificiale",
+            "wiki": "it.wikipedia.org",
+            "url": "https://it.wikipedia.org/wiki/Rete_neurale_artificiale"
+          },
+          {
+            "title": "ხელოვნური_ინტელექტი",
+            "wiki": "ka.wikipedia.org",
+            "url": "https://ka.wikipedia.org/wiki/%E1%83%AE%E1%83%94%E1%83%9A%E1%83%9D%E1%83%95%E1%83%9C%E1%83%A3%E1%83%A0%E1%83%98_%E1%83%98%E1%83%9C%E1%83%A2%E1%83%94%E1%83%9A%E1%83%94%E1%83%A5%E1%83%A2%E1%83%98"
+          },
+          {
+            "title": "បញ្ញាសិប្បនិម្មិត",
+            "wiki": "km.wikipedia.org",
+            "url": "https://km.wikipedia.org/wiki/%E1%9E%94%E1%9E%89%E1%9F%92%E1%9E%89%E1%9E%B6%E1%9E%9F%E1%9E%B7%E1%9E%94%E1%9F%92%E1%9E%94%E1%9E%93%E1%9E%B7%E1%9E%98%E1%9F%92%E1%9E%98%E1%9E%B7%E1%9E%8F"
+          },
+          {
+            "title": "ಕೃತಕ_ಬುದ್ಧಿಮತ್ತೆ",
+            "wiki": "kn.wikipedia.org",
+            "url": "https://kn.wikipedia.org/wiki/%E0%B2%95%E0%B3%83%E0%B2%A4%E0%B2%95_%E0%B2%AC%E0%B3%81%E0%B2%A6%E0%B3%8D%E0%B2%A7%E0%B2%BF%E0%B2%AE%E0%B2%A4%E0%B3%8D%E0%B2%A4%E0%B3%86"
+          },
+          {
+            "title": "인공_신경망",
+            "wiki": "ko.wikipedia.org",
+            "url": "https://ko.wikipedia.org/wiki/%EC%9D%B8%EA%B3%B5_%EC%8B%A0%EA%B2%BD%EB%A7%9D"
+          },
+          {
+            "title": "Requests_for_comment/Knowledge_requirements_template",
+            "wiki": "meta.wikimedia.org",
+            "url": "https://meta.wikimedia.org/wiki/Requests_for_comment/Knowledge_requirements_template"
+          },
+          {
+            "title": "കൃത്രിമ_നാഡീവ്യൂഹം",
+            "wiki": "ml.wikipedia.org",
+            "url": "https://ml.wikipedia.org/wiki/%E0%B4%95%E0%B5%83%E0%B4%A4%E0%B5%8D%E0%B4%B0%E0%B4%BF%E0%B4%AE_%E0%B4%A8%E0%B4%BE%E0%B4%A1%E0%B5%80%E0%B4%B5%E0%B5%8D%E0%B4%AF%E0%B5%82%E0%B4%B9%E0%B4%82"
+          },
+          {
+            "title": "Хиймэл_оюун",
+            "wiki": "mn.wikipedia.org",
+            "url": "https://mn.wikipedia.org/wiki/%D0%A5%D0%B8%D0%B9%D0%BC%D1%8D%D0%BB_%D0%BE%D1%8E%D1%83%D0%BD"
+          },
+          {
+            "title": "Kunstig_nevralt_nettverk",
+            "wiki": "no.wikipedia.org",
+            "url": "https://no.wikipedia.org/wiki/Kunstig_nevralt_nettverk"
+          },
+          {
+            "title": "Informatyka",
+            "wiki": "pl.wikipedia.org",
+            "url": "https://pl.wikipedia.org/wiki/Informatyka"
+          },
+          {
+            "title": "Wikipedysta:Tummomoxie/brudnopis",
+            "wiki": "pl.wikipedia.org",
+            "url": "https://pl.wikipedia.org/wiki/Wikipedysta:Tummomoxie/brudnopis"
+          },
+          {
+            "title": "Rede_neural_artificial",
+            "wiki": "pt.wikipedia.org",
+            "url": "https://pt.wikipedia.org/wiki/Rede_neural_artificial"
+          },
+          {
+            "title": "Inteligență_artificială",
+            "wiki": "ro.wikipedia.org",
+            "url": "https://ro.wikipedia.org/wiki/Inteligen%C8%9B%C4%83_artificial%C4%83"
+          },
+          {
+            "title": "Вештачка_интелигенција",
+            "wiki": "sr.wikipedia.org",
+            "url": "https://sr.wikipedia.org/wiki/%D0%92%D0%B5%D1%88%D1%82%D0%B0%D1%87%D0%BA%D0%B0_%D0%B8%D0%BD%D1%82%D0%B5%D0%BB%D0%B8%D0%B3%D0%B5%D0%BD%D1%86%D0%B8%D1%98%D0%B0"
+          },
+          {
+            "title": "Nätdiagram",
+            "wiki": "sv.wikipedia.org",
+            "url": "https://sv.wikipedia.org/wiki/N%C3%A4tdiagram"
+          },
+          {
+            "title": "Flerlagerperceptron",
+            "wiki": "sv.wikipedia.org",
+            "url": "https://sv.wikipedia.org/wiki/Flerlagerperceptron"
+          },
+          {
+            "title": "Mtandao_wa_neva_bandia",
+            "wiki": "sw.wikipedia.org",
+            "url": "https://sw.wikipedia.org/wiki/Mtandao_wa_neva_bandia"
+          },
+          {
+            "title": "செயற்கை_நுண்ணறிவு",
+            "wiki": "ta.wikipedia.org",
+            "url": "https://ta.wikipedia.org/wiki/%E0%AE%9A%E0%AF%86%E0%AE%AF%E0%AE%B1%E0%AF%8D%E0%AE%95%E0%AF%88_%E0%AE%A8%E0%AF%81%E0%AE%A3%E0%AF%8D%E0%AE%A3%E0%AE%B1%E0%AE%BF%E0%AE%B5%E0%AF%81"
+          },
+          {
+            "title": "โครงข่ายประสาทเทียม",
+            "wiki": "th.wikipedia.org",
+            "url": "https://th.wikipedia.org/wiki/%E0%B9%82%E0%B8%84%E0%B8%A3%E0%B8%87%E0%B8%82%E0%B9%88%E0%B8%B2%E0%B8%A2%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B8%AA%E0%B8%B2%E0%B8%97%E0%B9%80%E0%B8%97%E0%B8%B5%E0%B8%A2%E0%B8%A1"
+          },
+          {
+            "title": "Bağlantısallık",
+            "wiki": "tr.wikipedia.org",
+            "url": "https://tr.wikipedia.org/wiki/Ba%C4%9Flant%C4%B1sall%C4%B1k"
+          },
+          {
+            "title": "اصطناعی_عصبی_جالکار",
+            "wiki": "ur.wikipedia.org",
+            "url": "https://ur.wikipedia.org/wiki/%D8%A7%D8%B5%D8%B7%D9%86%D8%A7%D8%B9%DB%8C_%D8%B9%D8%B5%D8%A8%DB%8C_%D8%AC%D8%A7%D9%84%DA%A9%D8%A7%D8%B1"
+          },
+          {
+            "title": "Mạng_thần_kinh_nhân_tạo",
+            "wiki": "vi.wikipedia.org",
+            "url": "https://vi.wikipedia.org/wiki/M%E1%BA%A1ng_th%E1%BA%A7n_kinh_nh%C3%A2n_t%E1%BA%A1o"
+          },
+          {
+            "title": "ხელუანური_ინტელექტი",
+            "wiki": "xmf.wikipedia.org",
+            "url": "https://xmf.wikipedia.org/wiki/%E1%83%AE%E1%83%94%E1%83%9A%E1%83%A3%E1%83%90%E1%83%9C%E1%83%A3%E1%83%A0%E1%83%98_%E1%83%98%E1%83%9C%E1%83%A2%E1%83%94%E1%83%9A%E1%83%94%E1%83%A5%E1%83%A2%E1%83%98"
+          },
+          {
+            "title": "人工神經網絡",
+            "wiki": "zh-yue.wikipedia.org",
+            "url": "https://zh-yue.wikipedia.org/wiki/%E4%BA%BA%E5%B7%A5%E7%A5%9E%E7%B6%93%E7%B6%B2%E7%B5%A1"
+          },
+          {
+            "title": "迴歸分析",
+            "wiki": "zh-yue.wikipedia.org",
+            "url": "https://zh-yue.wikipedia.org/wiki/%E8%BF%B4%E6%AD%B8%E5%88%86%E6%9E%90"
+          },
+          {
+            "title": "機械學習",
+            "wiki": "zh-yue.wikipedia.org",
+            "url": "https://zh-yue.wikipedia.org/wiki/%E6%A9%9F%E6%A2%B0%E5%AD%B8%E7%BF%92"
+          },
+          {
+            "title": "數據探勘",
+            "wiki": "zh-yue.wikipedia.org",
+            "url": "https://zh-yue.wikipedia.org/wiki/%E6%95%B8%E6%93%9A%E6%8E%A2%E5%8B%98"
+          },
+          {
+            "title": "運算學習論",
+            "wiki": "zh-yue.wikipedia.org",
+            "url": "https://zh-yue.wikipedia.org/wiki/%E9%81%8B%E7%AE%97%E5%AD%B8%E7%BF%92%E8%AB%96"
+          },
+          {
+            "title": "事前數據處理",
+            "wiki": "zh-yue.wikipedia.org",
+            "url": "https://zh-yue.wikipedia.org/wiki/%E4%BA%8B%E5%89%8D%E6%95%B8%E6%93%9A%E8%99%95%E7%90%86"
+          },
+          {
+            "title": "決策樹學習",
+            "wiki": "zh-yue.wikipedia.org",
+            "url": "https://zh-yue.wikipedia.org/wiki/%E6%B1%BA%E7%AD%96%E6%A8%B9%E5%AD%B8%E7%BF%92"
+          },
+          {
+            "title": "Template:機械學習",
+            "wiki": "zh-yue.wikipedia.org",
+            "url": "https://zh-yue.wikipedia.org/wiki/Template:%E6%A9%9F%E6%A2%B0%E5%AD%B8%E7%BF%92"
+          },
+          {
+            "title": "認知科學",
+            "wiki": "zh-yue.wikipedia.org",
+            "url": "https://zh-yue.wikipedia.org/wiki/%E8%AA%8D%E7%9F%A5%E7%A7%91%E5%AD%B8"
+          },
+          {
+            "title": "知識表示",
+            "wiki": "zh-yue.wikipedia.org",
+            "url": "https://zh-yue.wikipedia.org/wiki/%E7%9F%A5%E8%AD%98%E8%A1%A8%E7%A4%BA"
+          },
+          {
+            "title": "聚類分析",
+            "wiki": "zh-yue.wikipedia.org",
+            "url": "https://zh-yue.wikipedia.org/wiki/%E8%81%9A%E9%A1%9E%E5%88%86%E6%9E%90"
+          },
+          {
+            "title": "數據科學",
+            "wiki": "zh-yue.wikipedia.org",
+            "url": "https://zh-yue.wikipedia.org/wiki/%E6%95%B8%E6%93%9A%E7%A7%91%E5%AD%B8"
+          },
+          {
+            "title": "深度學習",
+            "wiki": "zh-yue.wikipedia.org",
+            "url": "https://zh-yue.wikipedia.org/wiki/%E6%B7%B1%E5%BA%A6%E5%AD%B8%E7%BF%92"
+          },
+          {
+            "title": "貝葉斯網絡",
+            "wiki": "zh-yue.wikipedia.org",
+            "url": "https://zh-yue.wikipedia.org/wiki/%E8%B2%9D%E8%91%89%E6%96%AF%E7%B6%B2%E7%B5%A1"
+          },
+          {
+            "title": "人工神經細胞",
+            "wiki": "zh-yue.wikipedia.org",
+            "url": "https://zh-yue.wikipedia.org/wiki/%E4%BA%BA%E5%B7%A5%E7%A5%9E%E7%B6%93%E7%B4%B0%E8%83%9E"
+          },
+          {
+            "title": "監督式學習",
+            "wiki": "zh-yue.wikipedia.org",
+            "url": "https://zh-yue.wikipedia.org/wiki/%E7%9B%A3%E7%9D%A3%E5%BC%8F%E5%AD%B8%E7%BF%92"
+          },
+          {
+            "title": "非監督式學習",
+            "wiki": "zh-yue.wikipedia.org",
+            "url": "https://zh-yue.wikipedia.org/wiki/%E9%9D%9E%E7%9B%A3%E7%9D%A3%E5%BC%8F%E5%AD%B8%E7%BF%92"
+          },
+          {
+            "title": "強化學習",
+            "wiki": "zh-yue.wikipedia.org",
+            "url": "https://zh-yue.wikipedia.org/wiki/%E5%BC%B7%E5%8C%96%E5%AD%B8%E7%BF%92"
+          },
+          {
+            "title": "遺傳演算法",
+            "wiki": "zh-yue.wikipedia.org",
+            "url": "https://zh-yue.wikipedia.org/wiki/%E9%81%BA%E5%82%B3%E6%BC%94%E7%AE%97%E6%B3%95"
+          },
+          {
+            "title": "自助抽樣法",
+            "wiki": "zh-yue.wikipedia.org",
+            "url": "https://zh-yue.wikipedia.org/wiki/%E8%87%AA%E5%8A%A9%E6%8A%BD%E6%A8%A3%E6%B3%95"
+          },
+          {
+            "title": "表徵學習",
+            "wiki": "zh-yue.wikipedia.org",
+            "url": "https://zh-yue.wikipedia.org/wiki/%E8%A1%A8%E5%BE%B5%E5%AD%B8%E7%BF%92"
+          },
+          {
+            "title": "異常檢測",
+            "wiki": "zh-yue.wikipedia.org",
+            "url": "https://zh-yue.wikipedia.org/wiki/%E7%95%B0%E5%B8%B8%E6%AA%A2%E6%B8%AC"
+          },
+          {
+            "title": "前饋神經網絡",
+            "wiki": "zh-yue.wikipedia.org",
+            "url": "https://zh-yue.wikipedia.org/wiki/%E5%89%8D%E9%A5%8B%E7%A5%9E%E7%B6%93%E7%B6%B2%E7%B5%A1"
+          },
+          {
+            "title": "遞迴神經網絡",
+            "wiki": "zh-yue.wikipedia.org",
+            "url": "https://zh-yue.wikipedia.org/wiki/%E9%81%9E%E8%BF%B4%E7%A5%9E%E7%B6%93%E7%B6%B2%E7%B5%A1"
+          },
+          {
+            "title": "感知機",
+            "wiki": "zh-yue.wikipedia.org",
+            "url": "https://zh-yue.wikipedia.org/wiki/%E6%84%9F%E7%9F%A5%E6%A9%9F"
+          },
+          {
+            "title": "反向傳播算法",
+            "wiki": "zh-yue.wikipedia.org",
+            "url": "https://zh-yue.wikipedia.org/wiki/%E5%8F%8D%E5%90%91%E5%82%B3%E6%92%AD%E7%AE%97%E6%B3%95"
+          },
+          {
+            "title": "在線機械學習",
+            "wiki": "zh-yue.wikipedia.org",
+            "url": "https://zh-yue.wikipedia.org/wiki/%E5%9C%A8%E7%B7%9A%E6%A9%9F%E6%A2%B0%E5%AD%B8%E7%BF%92"
+          },
+          {
+            "title": "卷積神經網絡",
+            "wiki": "zh-yue.wikipedia.org",
+            "url": "https://zh-yue.wikipedia.org/wiki/%E5%8D%B7%E7%A9%8D%E7%A5%9E%E7%B6%93%E7%B6%B2%E7%B5%A1"
+          },
+          {
+            "title": "聯結主義",
+            "wiki": "zh-yue.wikipedia.org",
+            "url": "https://zh-yue.wikipedia.org/wiki/%E8%81%AF%E7%B5%90%E4%B8%BB%E7%BE%A9"
+          },
+          {
+            "title": "爬山演算法",
+            "wiki": "zh-yue.wikipedia.org",
+            "url": "https://zh-yue.wikipedia.org/wiki/%E7%88%AC%E5%B1%B1%E6%BC%94%E7%AE%97%E6%B3%95"
+          },
+          {
+            "title": "梯度下降法",
+            "wiki": "zh-yue.wikipedia.org",
+            "url": "https://zh-yue.wikipedia.org/wiki/%E6%A2%AF%E5%BA%A6%E4%B8%8B%E9%99%8D%E6%B3%95"
+          },
+          {
+            "title": "最佳化",
+            "wiki": "zh-yue.wikipedia.org",
+            "url": "https://zh-yue.wikipedia.org/wiki/%E6%9C%80%E4%BD%B3%E5%8C%96"
+          },
+          {
+            "title": "降維",
+            "wiki": "zh-yue.wikipedia.org",
+            "url": "https://zh-yue.wikipedia.org/wiki/%E9%99%8D%E7%B6%AD"
+          },
+          {
+            "title": "統計分類",
+            "wiki": "zh-yue.wikipedia.org",
+            "url": "https://zh-yue.wikipedia.org/wiki/%E7%B5%B1%E8%A8%88%E5%88%86%E9%A1%9E"
+          },
+          {
+            "title": "線性整流函數",
+            "wiki": "zh-yue.wikipedia.org",
+            "url": "https://zh-yue.wikipedia.org/wiki/%E7%B7%9A%E6%80%A7%E6%95%B4%E6%B5%81%E5%87%BD%E6%95%B8"
+          },
+          {
+            "title": "過適",
+            "wiki": "zh-yue.wikipedia.org",
+            "url": "https://zh-yue.wikipedia.org/wiki/%E9%81%8E%E9%81%A9"
+          },
+          {
+            "title": "長短期記憶",
+            "wiki": "zh-yue.wikipedia.org",
+            "url": "https://zh-yue.wikipedia.org/wiki/%E9%95%B7%E7%9F%AD%E6%9C%9F%E8%A8%98%E6%86%B6"
+          },
+          {
+            "title": "自編碼器",
+            "wiki": "zh-yue.wikipedia.org",
+            "url": "https://zh-yue.wikipedia.org/wiki/%E8%87%AA%E7%B7%A8%E7%A2%BC%E5%99%A8"
+          },
+          {
+            "title": "玻茲曼機",
+            "wiki": "zh-yue.wikipedia.org",
+            "url": "https://zh-yue.wikipedia.org/wiki/%E7%8E%BB%E8%8C%B2%E6%9B%BC%E6%A9%9F"
+          },
+          {
+            "title": "受限玻茲曼機",
+            "wiki": "zh-yue.wikipedia.org",
+            "url": "https://zh-yue.wikipedia.org/wiki/%E5%8F%97%E9%99%90%E7%8E%BB%E8%8C%B2%E6%9B%BC%E6%A9%9F"
+          },
+          {
+            "title": "關聯規則學習",
+            "wiki": "zh-yue.wikipedia.org",
+            "url": "https://zh-yue.wikipedia.org/wiki/%E9%97%9C%E8%81%AF%E8%A6%8F%E5%89%87%E5%AD%B8%E7%BF%92"
+          },
+          {
+            "title": "生成對抗網絡",
+            "wiki": "zh-yue.wikipedia.org",
+            "url": "https://zh-yue.wikipedia.org/wiki/%E7%94%9F%E6%88%90%E5%B0%8D%E6%8A%97%E7%B6%B2%E7%B5%A1"
+          },
+          {
+            "title": "人工神經網絡種類一覽",
+            "wiki": "zh-yue.wikipedia.org",
+            "url": "https://zh-yue.wikipedia.org/wiki/%E4%BA%BA%E5%B7%A5%E7%A5%9E%E7%B6%93%E7%B6%B2%E7%B5%A1%E7%A8%AE%E9%A1%9E%E4%B8%80%E8%A6%BD"
+          },
+          {
+            "title": "脈衝神經網絡",
+            "wiki": "zh-yue.wikipedia.org",
+            "url": "https://zh-yue.wikipedia.org/wiki/%E8%84%88%E8%A1%9D%E7%A5%9E%E7%B6%93%E7%B6%B2%E7%B5%A1"
+          },
+          {
+            "title": "自組織對映",
+            "wiki": "zh-yue.wikipedia.org",
+            "url": "https://zh-yue.wikipedia.org/wiki/%E8%87%AA%E7%B5%84%E7%B9%94%E5%B0%8D%E6%98%A0"
+          },
+          {
+            "title": "Transformer_(機械學習模型)",
+            "wiki": "zh-yue.wikipedia.org",
+            "url": "https://zh-yue.wikipedia.org/wiki/Transformer_(%E6%A9%9F%E6%A2%B0%E5%AD%B8%E7%BF%92%E6%A8%A1%E5%9E%8B)"
+          },
+          {
+            "title": "關注機制",
+            "wiki": "zh-yue.wikipedia.org",
+            "url": "https://zh-yue.wikipedia.org/wiki/%E9%97%9C%E6%B3%A8%E6%A9%9F%E5%88%B6"
+          },
+          {
+            "title": "電腦模擬",
+            "wiki": "zh-yue.wikipedia.org",
+            "url": "https://zh-yue.wikipedia.org/wiki/%E9%9B%BB%E8%85%A6%E6%A8%A1%E6%93%AC"
+          },
+          {
+            "title": "深度強化學習",
+            "wiki": "zh-yue.wikipedia.org",
+            "url": "https://zh-yue.wikipedia.org/wiki/%E6%B7%B1%E5%BA%A6%E5%BC%B7%E5%8C%96%E5%AD%B8%E7%BF%92"
+          },
+          {
+            "title": "正則化_(數學)",
+            "wiki": "zh-yue.wikipedia.org",
+            "url": "https://zh-yue.wikipedia.org/wiki/%E6%AD%A3%E5%89%87%E5%8C%96_(%E6%95%B8%E5%AD%B8)"
+          },
+          {
+            "title": "人工智能詞彙表",
+            "wiki": "zh-yue.wikipedia.org",
+            "url": "https://zh-yue.wikipedia.org/wiki/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E8%A9%9E%E5%BD%99%E8%A1%A8"
+          },
+          {
+            "title": "基於流嘅生成模型",
+            "wiki": "zh-yue.wikipedia.org",
+            "url": "https://zh-yue.wikipedia.org/wiki/%E5%9F%BA%E6%96%BC%E6%B5%81%E5%98%85%E7%94%9F%E6%88%90%E6%A8%A1%E5%9E%8B"
+          },
+          {
+            "title": "變分推斷",
+            "wiki": "zh-yue.wikipedia.org",
+            "url": "https://zh-yue.wikipedia.org/wiki/%E8%AE%8A%E5%88%86%E6%8E%A8%E6%96%B7"
+          },
+          {
+            "title": "線性可分度",
+            "wiki": "zh-yue.wikipedia.org",
+            "url": "https://zh-yue.wikipedia.org/wiki/%E7%B7%9A%E6%80%A7%E5%8F%AF%E5%88%86%E5%BA%A6"
+          },
+          {
+            "title": "線性分類機",
+            "wiki": "zh-yue.wikipedia.org",
+            "url": "https://zh-yue.wikipedia.org/wiki/%E7%B7%9A%E6%80%A7%E5%88%86%E9%A1%9E%E6%A9%9F"
+          },
+          {
+            "title": "圖神經網絡",
+            "wiki": "zh-yue.wikipedia.org",
+            "url": "https://zh-yue.wikipedia.org/wiki/%E5%9C%96%E7%A5%9E%E7%B6%93%E7%B6%B2%E7%B5%A1"
+          },
+          {
+            "title": "人工智能",
+            "wiki": "zh-yue.wikipedia.org",
+            "url": "https://zh-yue.wikipedia.org/wiki/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD"
+          },
+          {
+            "title": "User:Dr._Greywolf/Sandbox3",
+            "wiki": "zh-yue.wikipedia.org",
+            "url": "https://zh-yue.wikipedia.org/wiki/User:Dr._Greywolf/Sandbox3"
+          },
+          {
+            "title": "集成學習",
+            "wiki": "zh-yue.wikipedia.org",
+            "url": "https://zh-yue.wikipedia.org/wiki/%E9%9B%86%E6%88%90%E5%AD%B8%E7%BF%92"
+          },
+          {
+            "title": "隨機森林",
+            "wiki": "zh-yue.wikipedia.org",
+            "url": "https://zh-yue.wikipedia.org/wiki/%E9%9A%A8%E6%A9%9F%E6%A3%AE%E6%9E%97"
+          },
+          {
+            "title": "梯度提升技術",
+            "wiki": "zh-yue.wikipedia.org",
+            "url": "https://zh-yue.wikipedia.org/wiki/%E6%A2%AF%E5%BA%A6%E6%8F%90%E5%8D%87%E6%8A%80%E8%A1%93"
+          },
+          {
+            "title": "联结主义",
+            "wiki": "zh.wikipedia.org",
+            "url": "https://zh.wikipedia.org/wiki/%E8%81%94%E7%BB%93%E4%B8%BB%E4%B9%89"
+          },
+          {
+            "title": "User:David290/Artificial_intelligence",
+            "wiki": "zh.wikipedia.org",
+            "url": "https://zh.wikipedia.org/wiki/User:David290/Artificial_intelligence"
+          },
+          {
+            "title": "超普通心理学/智力/人工智慧",
+            "wiki": "zh.wikibooks.org",
+            "url": "https://zh.wikibooks.org/wiki/%E8%B6%85%E6%99%AE%E9%80%9A%E5%BF%83%E7%90%86%E5%AD%A6/%E6%99%BA%E5%8A%9B/%E4%BA%BA%E5%B7%A5%E6%99%BA%E6%85%A7"
+          }
+        ]
+      }
+    }
+  },
+  "limits": {
+    "globalusage": 500
+  }
+}

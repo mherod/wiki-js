@@ -1,0 +1,74 @@
+{
+  "batchcomplete": "",
+  "query": {
+    "normalized": [
+      {
+        "from": "File:Artificial_neural_network.svg",
+        "to": "File:Artificial neural network.svg"
+      }
+    ],
+    "pages": {
+      "-1": {
+        "ns": 6,
+        "title": "File:Artificial neural network.svg",
+        "missing": "",
+        "known": "",
+        "fileusage": [
+          {
+            "pageid": 1164,
+            "ns": 0,
+            "title": "Artificial intelligence"
+          },
+          {
+            "pageid": 21523,
+            "ns": 0,
+            "title": "Neural network (machine learning)"
+          },
+          {
+            "pageid": 263636,
+            "ns": 0,
+            "title": "Connectionism"
+          },
+          {
+            "pageid": 8700038,
+            "ns": 2,
+            "title": "User:Cburnett/GFDL images"
+          },
+          {
+            "pageid": 9539840,
+            "ns": 2,
+            "title": "User:Paskari/page2"
+          },
+          {
+            "pageid": 25346637,
+            "ns": 2,
+            "title": "User:Rich Farmbrough/temp59"
+          },
+          {
+            "pageid": 30858097,
+            "ns": 0,
+            "title": "Theories of second-language acquisition"
+          },
+          {
+            "pageid": 38507015,
+            "ns": 2,
+            "title": "User:Lms.sworth/sandbox"
+          },
+          {
+            "pageid": 54446563,
+            "ns": 2,
+            "title": "User:Mdd/Network diagram"
+          },
+          {
+            "pageid": 57462837,
+            "ns": 2,
+            "title": "User:Karmwiki/sandbox"
+          }
+        ]
+      }
+    }
+  },
+  "limits": {
+    "fileusage": 500
+  }
+}

@@ -1,0 +1,34 @@
+# Source
+src/
+scripts/
+test/
+tsconfig.json
+tsup.config.ts
+jest.config.js
+
+# Development configs
+.eslintrc
+.eslintrc.js
+.prettierrc
+.prettierrc.js
+.github/
+.vscode/
+.idea/
+
+# Test files
+*.test.ts
+*.spec.ts
+coverage/
+
+# Git files
+.git/
+.gitignore
+
+# Misc
+*.log
+.DS_Store
+.env*
+*.tsbuildinfo
+
+# Don't ignore distribution files
+!dist/ 

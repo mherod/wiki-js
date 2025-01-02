@@ -1,0 +1,31 @@
+{
+  "continue": {
+    "iistart": "2011-11-29T21:28:59Z",
+    "continue": "||"
+  },
+  "query": {
+    "pages": {
+      "31650255": {
+        "pageid": 31650255,
+        "ns": 6,
+        "title": "File:DNA Structure+Key+Labelled.pn NoBB.png",
+        "imagerepository": "shared",
+        "imageinfo": [
+          {
+            "timestamp": "2019-10-02T01:04:13Z",
+            "user": "JeffyP",
+            "size": 2768340,
+            "width": 3024,
+            "height": 3000,
+            "url": "https://upload.wikimedia.org/wikipedia/commons/4/4c/DNA_Structure%2BKey%2BLabelled.pn_NoBB.png",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:DNA_Structure%2BKey%2BLabelled.pn_NoBB.png",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=15027555",
+            "mime": "image/png",
+            "mediatype": "BITMAP",
+            "bitdepth": 8
+          }
+        ]
+      }
+    }
+  }
+}

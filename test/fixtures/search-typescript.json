@@ -1,0 +1,59 @@
+{
+  "batchcomplete": "",
+  "continue": {
+    "sroffset": 5,
+    "continue": "-||"
+  },
+  "query": {
+    "searchinfo": {
+      "totalhits": 49174
+    },
+    "search": [
+      {
+        "ns": 0,
+        "title": "TypeScript",
+        "pageid": 8157205,
+        "size": 45822,
+        "wordcount": 3418,
+        "snippet": "optional <span class=\"searchmatch\">type</span> annotations to Java<span class=\"searchmatch\">Script</span>. It is designed for the development of large applications and transpiles to Java<span class=\"searchmatch\">Script</span>. <span class=\"searchmatch\">TypeScript</span> may be used",
+        "timestamp": "2024-12-31T20:29:07Z"
+      },
+      {
+        "ns": 0,
+        "title": "Typescript",
+        "pageid": 37316260,
+        "size": 306,
+        "wordcount": 71,
+        "snippet": "referred to as <span class=\"searchmatch\">typescript</span> <span class=\"searchmatch\">TypeScript</span>, a programming language This disambiguation page lists articles associated with the title <span class=\"searchmatch\">Typescript</span>. If an internal",
+        "timestamp": "2024-07-22T17:47:29Z"
+      },
+      {
+        "ns": 0,
+        "title": "AtScript",
+        "pageid": 44365118,
+        "size": 2284,
+        "wordcount": 215,
+        "snippet": "At<span class=\"searchmatch\">Script</span> was a proposed Java<span class=\"searchmatch\">Script</span>-based <span class=\"searchmatch\">scripting</span> language extending Microsoft's <span class=\"searchmatch\">TypeScript</span> and transcompiling to Java<span class=\"searchmatch\">Script</span>. It was introduced in October",
+        "timestamp": "2024-06-17T05:59:47Z"
+      },
+      {
+        "ns": 0,
+        "title": "JavaScript",
+        "pageid": 9845,
+        "size": 98024,
+        "wordcount": 9365,
+        "snippet": "Java<span class=\"searchmatch\">Script</span>-heavy, so transpilers have been created to convert code written in other languages, which can aid the development process. <span class=\"searchmatch\">TypeScript</span> and CoffeeScript",
+        "timestamp": "2024-12-15T19:41:55Z"
+      },
+      {
+        "ns": 0,
+        "title": "AssemblyScript",
+        "pageid": 66707963,
+        "size": 15732,
+        "wordcount": 1510,
+        "snippet": "Assembly<span class=\"searchmatch\">Script</span> is a <span class=\"searchmatch\">TypeScript</span>-based programming language that is optimized for, and statically compiled to, WebAssembly (currently using asc, the reference",
+        "timestamp": "2024-12-26T11:23:32Z"
+      }
+    ]
+  }
+}
