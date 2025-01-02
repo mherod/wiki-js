@@ -1,8 +1,8 @@
 {
   "error": {
-    "code": "show",
-    "info": "Incorrect parameter - mutually exclusive values may not be supplied.",
+    "code": "invalidparammix",
+    "info": "The \"alprop=ids\" parameter cannot be used with \"alunique\".",
     "*": "See https://en.wikipedia.org/w/api.php for API usage. Subscribe to the mediawiki-api-announce mailing list at &lt;https://lists.wikimedia.org/postorius/lists/mediawiki-api-announce.lists.wikimedia.org/&gt; for notice of API deprecations and breaking changes."
   },
-  "servedby": "mw-api-ext.eqiad.main-69c974fc68-mxsr2"
+  "servedby": "mw-api-ext.eqiad.main-69c974fc68-clgq9"
 }

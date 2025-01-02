@@ -1,4 +1,9 @@
 {
+  "warnings": {
+    "main": {
+      "*": "Unrecognized parameter: plshow."
+    }
+  },
   "batchcomplete": "",
   "query": {
     "pages": {
@@ -1834,90 +1839,6 @@
           {
             "ns": 0,
             "title": "Zope"
-          },
-          {
-            "ns": 1,
-            "title": "Talk:React (software)"
-          },
-          {
-            "ns": 4,
-            "title": "Wikipedia:Citing sources"
-          },
-          {
-            "ns": 4,
-            "title": "Wikipedia:Manual of Style/Dates and numbers"
-          },
-          {
-            "ns": 4,
-            "title": "Wikipedia:Reliable sources"
-          },
-          {
-            "ns": 4,
-            "title": "Wikipedia:Verifiability"
-          },
-          {
-            "ns": 10,
-            "title": "Template:ECMAScript"
-          },
-          {
-            "ns": 10,
-            "title": "Template:JS templating"
-          },
-          {
-            "ns": 10,
-            "title": "Template:Meta Platforms"
-          },
-          {
-            "ns": 10,
-            "title": "Template:Web frameworks"
-          },
-          {
-            "ns": 11,
-            "title": "Template talk:ECMAScript"
-          },
-          {
-            "ns": 11,
-            "title": "Template talk:JS templating"
-          },
-          {
-            "ns": 11,
-            "title": "Template talk:Meta Platforms"
-          },
-          {
-            "ns": 11,
-            "title": "Template talk:Web frameworks"
-          },
-          {
-            "ns": 12,
-            "title": "Help:Authority control"
-          },
-          {
-            "ns": 12,
-            "title": "Help:Maintenance template removal"
-          },
-          {
-            "ns": 12,
-            "title": "Help:Referencing for beginners"
-          },
-          {
-            "ns": 14,
-            "title": "Category:Articles needing additional references from May 2024"
-          },
-          {
-            "ns": 14,
-            "title": "Category:Articles with self-published sources from May 2024"
-          },
-          {
-            "ns": 14,
-            "title": "Category:Python (programming language) web frameworks"
-          },
-          {
-            "ns": 14,
-            "title": "Category:Wikipedia articles in need of updating from June 2018"
-          },
-          {
-            "ns": 100,
-            "title": "Portal:Free and open-source software"
           }
         ]
       }

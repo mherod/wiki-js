@@ -1,0 +1,19 @@
+{
+  "batchcomplete": "",
+  "query": {
+    "pages": {
+      "9845": {
+        "pageid": 9845,
+        "ns": 0,
+        "title": "JavaScript",
+        "extract": "JavaScript (), often abbreviated as JS, is a programming language and core technology of the Web, alongside HTML and CSS. 99% of websites use JavaScript on the client side for webpage behavior.\nWeb browsers have a dedicated JavaScript engine that executes the client code. These engines are also utilized in some servers and a variety of apps. The most popular runtime system for non-browser usage is Node.js.\nJavaScript is a high-level, often just-in-time compiled language that conforms to the ECMAScript standard."
+      },
+      "8157205": {
+        "pageid": 8157205,
+        "ns": 0,
+        "title": "TypeScript",
+        "extract": "TypeScript (abbreviated as TS) is a free and open-source high-level programming language developed by Microsoft that adds static typing with optional type annotations to JavaScript. It is designed for the development of large applications and transpiles to JavaScript.\nTypeScript may be used to develop JavaScript applications for both client-side and server-side execution (as with Node.js, Deno or Bun). Multiple options are available for transpilation. The default TypeScript Compiler can be used, or the Babel compiler can be invoked to convert TypeScript to JavaScript."
+      }
+    }
+  }
+}

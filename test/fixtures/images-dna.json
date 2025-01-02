@@ -1,4 +1,9 @@
 {
+  "warnings": {
+    "main": {
+      "*": "Unrecognized parameter: imnamespace."
+    }
+  },
   "batchcomplete": "",
   "query": {
     "pages": {

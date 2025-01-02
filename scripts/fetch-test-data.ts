@@ -28,95 +28,105 @@ async function fetchAndSave(params: Record<string, string>, filename: string) {
 }
 
 async function main() {
-  // Fetch page content for 'JavaScript'
+  // Basic page content and extracts
   await fetchAndSave(
     {
       action: 'query',
       titles: 'JavaScript',
       prop: 'extracts',
       explaintext: 'true',
+      exintro: 'true',
+      exsentences: '3',
     },
     'page-javascript.json'
   );
 
-  // Fetch search results for 'TypeScript'
+  // Search functionality
   await fetchAndSave(
     {
       action: 'query',
       list: 'search',
       srsearch: 'TypeScript',
       srlimit: '5',
+      srinfo: 'totalhits|suggestion|rewrittenquery',
     },
     'search-typescript.json'
   );
 
-  // Fetch page info for 'Node.js'
+  // Page info with all properties
   await fetchAndSave(
     {
       action: 'query',
       titles: 'Node.js',
       prop: 'info',
-      inprop: 'url|displaytitle|contentmodel|length|touched|lastrevid',
+      inprop: 'url|displaytitle|contentmodel|length|touched|lastrevid|preload|displaytitle',
     },
     'page-info-nodejs.json'
   );
 
-  // Fetch categories for 'Python (programming language)'
+  // Categories with sorting and timestamps
   await fetchAndSave(
     {
       action: 'query',
       titles: 'Python (programming language)',
       prop: 'categories',
       cllimit: 'max',
+      clshow: 'hidden|!hidden',
+      clprop: 'sortkey|timestamp|hidden',
     },
     'categories-python.json'
   );
 
-  // Fetch links from 'React (software)'
+  // Links with namespaces and IDs
   await fetchAndSave(
     {
       action: 'query',
       titles: 'React (software)',
       prop: 'links',
       pllimit: 'max',
+      plnamespace: '0',
+      plshow: 'redirect|!redirect',
     },
     'links-react.json'
   );
 
-  // Fetch backlinks to 'TypeScript'
+  // Backlinks with filtering
   await fetchAndSave(
     {
       action: 'query',
       list: 'backlinks',
       bltitle: 'TypeScript',
       bllimit: '10',
+      blnamespace: '0',
+      blfilterredir: 'nonredirects',
     },
     'backlinks-typescript.json'
   );
 
-  // Fetch images from 'DNA'
+  // Images with detailed properties
   await fetchAndSave(
     {
       action: 'query',
       titles: 'DNA',
       prop: 'images',
       imlimit: 'max',
+      imnamespace: '6',
     },
     'images-dna.json'
   );
 
-  // Fetch image info for a specific diagram
+  // Image info with all metadata
   await fetchAndSave(
     {
       action: 'query',
       titles: 'File:DNA Structure+Key+Labelled.pn NoBB.png',
       prop: 'imageinfo',
-      iiprop: 'timestamp|user|size|url|mime|mediatype|bitdepth',
+      iiprop: 'timestamp|user|userid|comment|parsedcomment|canonicaltitle|url|size|dimensions|sha1|mime|mediatype|metadata|commonmetadata|extmetadata|bitdepth|duration|uploadwarning',
     },
     'image-info-dna-structure.json'
   );
 
-  // Search for images related to 'neural network'
+  // Image search with various filters
   await fetchAndSave(
     {
       action: 'query',
@@ -124,31 +134,91 @@ async function main() {
       aisearch: 'neural network diagram',
       ailimit: '5',
       aiprop: 'timestamp|user|size|url|mime|mediatype|bitdepth',
+      aiminsize: '1000',
+      aimaxsize: '5000000',
+      aifilterbots: 'nobots',
     },
     'search-images-neural-network.json'
   );
 
-  // Get file usage for a popular diagram
+  // File usage across wiki
   await fetchAndSave(
     {
       action: 'query',
       titles: 'File:Artificial_neural_network.svg',
       prop: 'fileusage',
       fulimit: 'max',
+      funamespace: '0',
+      furedirect: 'true',
     },
     'file-usage-neural-network.json'
   );
 
-  // Get global usage for a popular diagram
+  // Global usage across projects
   await fetchAndSave(
     {
       action: 'query',
       titles: 'File:Artificial_neural_network.svg',
       prop: 'globalusage',
       gulimit: 'max',
+      gufilterlocal: 'true',
     },
     'global-usage-neural-network.json'
   );
+
+  // All links enumeration
+  await fetchAndSave(
+    {
+      action: 'query',
+      list: 'alllinks',
+      alnamespace: '0',
+      allimit: '10',
+      alprop: 'ids|title',
+      alunique: '',
+      alfrom: 'JavaScript',
+      alto: 'Python',
+    },
+    'all-links.json'
+  );
+
+  // All pages enumeration with filters
+  await fetchAndSave(
+    {
+      action: 'query',
+      list: 'allpages',
+      apnamespace: '0',
+      aplimit: '10',
+      apfilterredir: 'nonredirects',
+      apfilterlanglinks: 'withlanglinks',
+      apminsize: '1000',
+      apmaxsize: '100000',
+      apprtype: 'edit|move',
+      apprlevel: 'sysop',
+      apprfiltercascade: 'cascading',
+      apfrom: 'JavaScript',
+      apto: 'Python',
+    },
+    'all-pages.json'
+  );
+
+  // Extracts with various formatting options
+  await fetchAndSave(
+    {
+      action: 'query',
+      titles: 'JavaScript|TypeScript',
+      prop: 'extracts',
+      exintro: 'true',
+      exsentences: '5',
+      explaintext: 'true',
+      exsectionformat: 'wiki',
+    },
+    'extracts-programming.json'
+  );
 }
 
-main().catch(console.error); 
+main().catch(console.error).then(() => {
+  console.log('✓ All test data fetched and saved');
+  process.exit(0);
+}, () => {
+  process.exit(1);
+});

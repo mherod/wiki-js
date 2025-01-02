@@ -1,4 +1,9 @@
 {
+  "warnings": {
+    "main": {
+      "*": "Unrecognized parameter: furedirect."
+    }
+  },
   "batchcomplete": "",
   "query": {
     "normalized": [
@@ -30,39 +35,9 @@
             "title": "Connectionism"
           },
           {
-            "pageid": 8700038,
-            "ns": 2,
-            "title": "User:Cburnett/GFDL images"
-          },
-          {
-            "pageid": 9539840,
-            "ns": 2,
-            "title": "User:Paskari/page2"
-          },
-          {
-            "pageid": 25346637,
-            "ns": 2,
-            "title": "User:Rich Farmbrough/temp59"
-          },
-          {
             "pageid": 30858097,
             "ns": 0,
             "title": "Theories of second-language acquisition"
-          },
-          {
-            "pageid": 38507015,
-            "ns": 2,
-            "title": "User:Lms.sworth/sandbox"
-          },
-          {
-            "pageid": 54446563,
-            "ns": 2,
-            "title": "User:Mdd/Network diagram"
-          },
-          {
-            "pageid": 57462837,
-            "ns": 2,
-            "title": "User:Karmwiki/sandbox"
           }
         ]
       }

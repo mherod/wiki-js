@@ -3,6 +3,11 @@
     "iistart": "2011-11-29T21:28:59Z",
     "continue": "||"
   },
+  "warnings": {
+    "imageinfo": {
+      "*": "Unrecognized value for parameter \"iiprop\": duration"
+    }
+  },
   "query": {
     "pages": {
       "31650255": {
@@ -14,12 +19,130 @@
           {
             "timestamp": "2019-10-02T01:04:13Z",
             "user": "JeffyP",
+            "userid": 84198,
             "size": 2768340,
             "width": 3024,
             "height": 3000,
+            "parsedcomment": "Trim whitespace, and shrink filesize",
+            "comment": "Trim whitespace, and shrink filesize",
+            "html": "<div>\n<figure typeof=\"mw:File/Thumb\"><a href=\"/wiki/File:DNA_Structure%2BKey%2BLabelled.pn_NoBB.png\" class=\"mw-file-description\"><img src=\"//upload.wikimedia.org/wikipedia/commons/thumb/4/4c/DNA_Structure%2BKey%2BLabelled.pn_NoBB.png/100px-DNA_Structure%2BKey%2BLabelled.pn_NoBB.png\" decoding=\"async\" width=\"100\" height=\"99\" class=\"mw-file-element\" srcset=\"//upload.wikimedia.org/wikipedia/commons/thumb/4/4c/DNA_Structure%2BKey%2BLabelled.pn_NoBB.png/150px-DNA_Structure%2BKey%2BLabelled.pn_NoBB.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/4/4c/DNA_Structure%2BKey%2BLabelled.pn_NoBB.png/200px-DNA_Structure%2BKey%2BLabelled.pn_NoBB.png 2x\" data-file-width=\"3024\" data-file-height=\"3000\" /></a><figcaption>Existing file</figcaption></figure>\n<p><span id=\"wpUploadWarningFileexists\">A file with this name exists already. Please check <b><a class=\"mw-selflink selflink\">the existing file</a></b> before overwriting.  Use a descriptive filename (e.g. \"Eiffel Tower, Paris, at night.jpg\") to prevent conflicts with existing files.</span>\n</p>\n<div style=\"clear:both;\"></div>\n</div>",
+            "canonicaltitle": "File:DNA Structure+Key+Labelled.pn NoBB.png",
             "url": "https://upload.wikimedia.org/wikipedia/commons/4/4c/DNA_Structure%2BKey%2BLabelled.pn_NoBB.png",
             "descriptionurl": "https://commons.wikimedia.org/wiki/File:DNA_Structure%2BKey%2BLabelled.pn_NoBB.png",
             "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=15027555",
+            "sha1": "363ddbb9d65854d560f61a57ddd83e49290ca68c",
+            "metadata": [
+              {
+                "name": "frameCount",
+                "value": 0
+              },
+              {
+                "name": "loopCount",
+                "value": 1
+              },
+              {
+                "name": "duration",
+                "value": 0
+              },
+              {
+                "name": "bitDepth",
+                "value": 8
+              },
+              {
+                "name": "colorType",
+                "value": "truecolour-alpha"
+              },
+              {
+                "name": "metadata",
+                "value": [
+                  {
+                    "name": "_MW_PNG_VERSION",
+                    "value": 1
+                  }
+                ]
+              }
+            ],
+            "commonmetadata": [],
+            "extmetadata": {
+              "DateTime": {
+                "value": "2019-10-02 01:04:13",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "DNA Structure+Key+Labelled.pn NoBB",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Ball-and-stick models of DNA helix-structure|Base pairing|Biology images that should use vector graphics|Featured pictures on Wikipedia, English|Files with Assessments template missing SDC Commons no value quality assessment|GFDL|License migration redundant|PNG that should use vector graphics|Self-published work",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "The structure of DNA showing with detail the structure of the four bases, adenine, cytosine, guanine and thymine, and the location of the major and minor groove.",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "2011-04-26",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "<a href=\"//commons.wikimedia.org/wiki/User:Zephyris\" title=\"User:Zephyris\">Zephyris</a>",
+                "source": "commons-desc-page"
+              },
+              "Permission": {
+                "value": "See below. For information about commercial use please contact me via my <a rel=\"nofollow\" class=\"external text\" href=\"http://www.richardwheeler.net\">website</a>.",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseShortName": {
+                "value": "CC BY-SA 3.0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Creative Commons Attribution-Share Alike 3.0",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "true",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseUrl": {
+                "value": "https://creativecommons.org/licenses/by-sa/3.0",
+                "source": "commons-desc-page"
+              },
+              "Copyrighted": {
+                "value": "True",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "cc-by-sa-3.0",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            },
             "mime": "image/png",
             "mediatype": "BITMAP",
             "bitdepth": 8

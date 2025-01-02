@@ -1,8 +1,11 @@
 {
   "batchcomplete": "",
   "warnings": {
+    "main": {
+      "*": "Subscribe to the mediawiki-api-announce mailing list at <https://lists.wikimedia.org/postorius/lists/mediawiki-api-announce.lists.wikimedia.org/> for notice of API deprecations and breaking changes. Use [[Special:ApiFeatureUsage]] to see usage of deprecated features by your application."
+    },
     "info": {
-      "*": "Unrecognized values for parameter \"inprop\": contentmodel, length, touched, lastrevid"
+      "*": "The value \"preload\" to parameter \"inprop\" has been deprecated.\nUnrecognized values for parameter \"inprop\": contentmodel, length, touched, lastrevid"
     }
   },
   "query": {
@@ -21,6 +24,7 @@
         "fullurl": "https://en.wikipedia.org/wiki/Node.js",
         "editurl": "https://en.wikipedia.org/w/index.php?title=Node.js&action=edit",
         "canonicalurl": "https://en.wikipedia.org/wiki/Node.js",
+        "preload": "",
         "displaytitle": "Node.js"
       }
     }
