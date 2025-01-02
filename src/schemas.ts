@@ -465,60 +465,75 @@ export const ExtractsParamsSchema = BaseApiParamsSchema.extend({
 /**
  * Schema for page views statistics options
  */
-export const PageViewsOptionsSchema = z.object({
-  start: z.string().optional(),  // Start date in YYYYMMDD format
-  end: z.string().optional(),    // End date in YYYYMMDD format
-  granularity: z.enum(['daily', 'monthly']).default('daily'),
-  access: z.enum(['all-access', 'desktop', 'mobile-app', 'mobile-web']).default('all-access'),
-  agent: z.enum(['all-agents', 'user', 'spider', 'bot']).default('all-agents'),
-}).partial();
+export const PageViewsOptionsSchema = z
+  .object({
+    start: z.string().optional(), // Start date in YYYYMMDD format
+    end: z.string().optional(), // End date in YYYYMMDD format
+    granularity: z.enum(['daily', 'monthly']).default('daily'),
+    access: z.enum(['all-access', 'desktop', 'mobile-app', 'mobile-web']).default('all-access'),
+    agent: z.enum(['all-agents', 'user', 'spider', 'bot']).default('all-agents'),
+  })
+  .partial();
 
 /**
  * Schema for page views statistics response
  */
 export const PageViewsResponseSchema = z.object({
-  items: z.array(z.object({
-    project: z.string(),
-    article: z.string(),
-    granularity: z.string(),
-    timestamp: z.string(),
-    access: z.string(),
-    agent: z.string(),
-    views: z.number(),
-  })),
+  items: z.array(
+    z.object({
+      project: z.string(),
+      article: z.string(),
+      granularity: z.string(),
+      timestamp: z.string(),
+      access: z.string(),
+      agent: z.string(),
+      views: z.number(),
+    }),
+  ),
 });
 
+/**
+ * Type definition for page views options
+ */
 export type PageViewsOptions = z.infer<typeof PageViewsOptionsSchema>;
+
+/**
+ * Type definition for page views response
+ */
 export type PageViewsResponse = z.infer<typeof PageViewsResponseSchema>;
 
 /**
  * Schema for revision options
  */
-export const RevisionOptionsSchema = z.object({
-  limit: z.number().int().min(1).max(500).optional(),
-  start: z.string().optional(), // Timestamp to start listing from
-  end: z.string().optional(),   // Timestamp to stop listing at
-  direction: z.enum(['newer', 'older']).optional(),
-  user: z.string().optional(),  // Only list revisions by this user
-  excludeUser: z.string().optional(), // Exclude revisions by this user
-  tag: z.string().optional(),   // Only list revisions with this tag
-  properties: z.array(
-    z.enum([
-      'ids',
-      'timestamp',
-      'flags',
-      'comment',
-      'parsedcomment',
-      'size',
-      'sha1',
-      'roles',
-      'tags',
-      'user',
-      'userid',
-      'content',
-    ])
-  ).optional(),
-}).strict();
+export const RevisionOptionsSchema = z
+  .object({
+    limit: z.number().int().min(1).max(500).optional(),
+    start: z.string().optional(), // Timestamp to start listing from
+    end: z.string().optional(), // Timestamp to stop listing at
+    direction: z.enum(['newer', 'older']).optional(),
+    user: z.string().optional(), // Only list revisions by this user
+    excludeUser: z.string().optional(), // Exclude revisions by this user
+    tag: z.string().optional(), // Only list revisions with this tag
+    properties: z
+      .array(
+        z.enum([
+          'ids',
+          'timestamp',
+          'flags',
+          'comment',
+          'parsedcomment',
+          'size',
+          'sha1',
+          'roles',
+          'tags',
+          'user',
+          'userid',
+          'content',
+        ]),
+      )
+      .optional(),
+  })
+  .strict();
 
 /**
  * Schema for a single revision
@@ -542,6 +557,7 @@ export const RevisionSchema = z.object({
 
 /**
  * Schema for revisions response
+ * @returns A schema for the revisions response
  */
 export const createRevisionsResponseSchema = () =>
   createWikimediaResponseSchema(
@@ -552,13 +568,24 @@ export const createRevisionsResponseSchema = () =>
           ns: z.number(),
           title: z.string(),
           revisions: z.array(RevisionSchema).optional(),
-        })
+        }),
       ),
-    })
+    }),
   );
 
+/**
+ * Type definition for revision options
+ */
 export type RevisionOptions = z.infer<typeof RevisionOptionsSchema>;
+
+/**
+ * Type definition for a single revision
+ */
 export type Revision = z.infer<typeof RevisionSchema>;
+
+/**
+ * Type definition for revisions response
+ */
 export type RevisionsResponse = z.infer<ReturnType<typeof createRevisionsResponseSchema>>;
 
 // Type exports

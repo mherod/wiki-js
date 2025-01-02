@@ -393,7 +393,7 @@ export class WikimediaClient {
 
   /**
    * Get page views statistics for a given article
-   * 
+   *
    * @param title - The title of the article
    * @param options - Options for filtering page views data
    * @returns Page views statistics
@@ -403,25 +403,28 @@ export class WikimediaClient {
     const today = new Date();
     const thirtyDaysAgo = new Date(today.getTime() - 30 * 24 * 60 * 60 * 1000);
 
-    const start = validatedOptions.start ?? 
+    const start =
+      validatedOptions.start ??
       thirtyDaysAgo.toISOString().slice(0, 10).replace(/-/g, '');
-    const end = validatedOptions.end ?? 
+    const end =
+      validatedOptions.end ??
       today.toISOString().slice(0, 10).replace(/-/g, '');
 
-    const encodedTitle = encodeURIComponent(title).replace(/[!'()*]/g, c => 
-      '%' + c.charCodeAt(0).toString(16).toUpperCase()
+    const encodedTitle = encodeURIComponent(title).replace(
+      /[!'()*]/g,
+      (c) => '%' + c.charCodeAt(0).toString(16).toUpperCase(),
     );
 
     const response = await this.client.get(
       `https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/` +
-      `${validatedOptions.access ?? 'all-access'}/` +
-      `${validatedOptions.agent ?? 'all-agents'}/` +
-      `${encodedTitle}/` +
-      `${validatedOptions.granularity ?? 'daily'}/` +
-      `${start}/${end}`,
+        `${validatedOptions.access ?? 'all-access'}/` +
+        `${validatedOptions.agent ?? 'all-agents'}/` +
+        `${encodedTitle}/` +
+        `${validatedOptions.granularity ?? 'daily'}/` +
+        `${start}/${end}`,
       {
         baseURL: '', // Override baseURL for this request
-      }
+      },
     );
 
     return PageViewsResponseSchema.parse(response.data);
@@ -429,7 +432,7 @@ export class WikimediaClient {
 
   /**
    * Get revision history for a page
-   * 
+   *
    * @param title - The title of the page
    * @param options - Options for filtering and formatting revisions
    * @returns Page revision history
