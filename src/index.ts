@@ -403,12 +403,8 @@ export class WikimediaClient {
     const today = new Date();
     const thirtyDaysAgo = new Date(today.getTime() - 30 * 24 * 60 * 60 * 1000);
 
-    const start =
-      validatedOptions.start ??
-      thirtyDaysAgo.toISOString().slice(0, 10).replace(/-/g, '');
-    const end =
-      validatedOptions.end ??
-      today.toISOString().slice(0, 10).replace(/-/g, '');
+    const start = validatedOptions.start ?? thirtyDaysAgo.toISOString().slice(0, 10).replace(/-/g, '');
+    const end = validatedOptions.end ?? today.toISOString().slice(0, 10).replace(/-/g, '');
 
     const encodedTitle = encodeURIComponent(title).replace(
       /[!'()*]/g,
@@ -452,9 +448,7 @@ export class WikimediaClient {
       rvuser: validatedOptions.user,
       rvexcludeuser: validatedOptions.excludeUser,
       rvtag: validatedOptions.tag,
-      rvprop:
-        validatedOptions.properties?.join('|') ??
-        'ids|timestamp|flags|comment|size|user|userid',
+      rvprop: validatedOptions.properties?.join('|') ?? 'ids|timestamp|flags|comment|size|user|userid',
     };
 
     const response = await this.client.get('', {
