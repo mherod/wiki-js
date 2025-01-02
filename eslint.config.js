@@ -1,6 +1,7 @@
 import tseslint from '@typescript-eslint/eslint-plugin';
 import tsParser from '@typescript-eslint/parser';
 import jsdoc from 'eslint-plugin-jsdoc';
+import prettier from 'eslint-plugin-prettier';
 
 export default [
   {
@@ -23,12 +24,18 @@ export default [
     plugins: {
       '@typescript-eslint': tseslint,
       'jsdoc': jsdoc,
+      'prettier': prettier,
     },
     rules: {
       ...tseslint.configs['recommended'].rules,
       '@typescript-eslint/no-explicit-any': 'warn',
       '@typescript-eslint/explicit-module-boundary-types': 'off',
       '@typescript-eslint/no-unused-vars': ['error', { argsIgnorePattern: '^_' }],
+      
+      // Prettier Rules
+      'prettier/prettier': ['error', {}, { usePrettierrc: true }],
+      'arrow-body-style': 'off',
+      'prefer-arrow-callback': 'off',
       
       // JSDoc Rules
       'jsdoc/require-jsdoc': ['error', {

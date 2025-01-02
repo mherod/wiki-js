@@ -215,7 +215,7 @@ export class WikimediaClient {
    */
   async searchImages(query: string, options: ImageSearchOptions = {}) {
     const validatedOptions = ImageSearchOptionsSchema.parse(options);
-    
+
     const params = SearchImagesParamsSchema.parse({
       action: 'query',
       list: 'allimages',
@@ -223,16 +223,27 @@ export class WikimediaClient {
       ...(query && { aisearch: query }),
       ...(validatedOptions.sort && { aisort: validatedOptions.sort }),
       ...(validatedOptions.direction && { aidir: validatedOptions.direction }),
-      ...(validatedOptions.from && (!validatedOptions.sort || validatedOptions.sort === 'name') && { aifrom: validatedOptions.from }),
-      ...(validatedOptions.to && (!validatedOptions.sort || validatedOptions.sort === 'name') && { aito: validatedOptions.to }),
-      ...(validatedOptions.start && validatedOptions.sort === 'timestamp' && { aistart: validatedOptions.start }),
-      ...(validatedOptions.end && validatedOptions.sort === 'timestamp' && { aiend: validatedOptions.end }),
+      ...(validatedOptions.from &&
+        (!validatedOptions.sort || validatedOptions.sort === 'name') && {
+          aifrom: validatedOptions.from,
+        }),
+      ...(validatedOptions.to &&
+        (!validatedOptions.sort || validatedOptions.sort === 'name') && {
+          aito: validatedOptions.to,
+        }),
+      ...(validatedOptions.start &&
+        validatedOptions.sort === 'timestamp' && { aistart: validatedOptions.start }),
+      ...(validatedOptions.end &&
+        validatedOptions.sort === 'timestamp' && { aiend: validatedOptions.end }),
       ...(validatedOptions.minSize && { aiminsize: validatedOptions.minSize }),
       ...(validatedOptions.maxSize && { aimaxsize: validatedOptions.maxSize }),
-      ...(validatedOptions.user && validatedOptions.sort === 'timestamp' && { aiuser: validatedOptions.user }),
-      ...(validatedOptions.filterBots && validatedOptions.sort === 'timestamp' && { aifilterbots: validatedOptions.filterBots }),
+      ...(validatedOptions.user &&
+        validatedOptions.sort === 'timestamp' && { aiuser: validatedOptions.user }),
+      ...(validatedOptions.filterBots &&
+        validatedOptions.sort === 'timestamp' && { aifilterbots: validatedOptions.filterBots }),
       ...(validatedOptions.sha1 && { aisha1: validatedOptions.sha1 }),
-      aiprop: validatedOptions.properties?.join('|') ?? 'timestamp|user|size|url|mime|mediatype|bitdepth',
+      aiprop:
+        validatedOptions.properties?.join('|') ?? 'timestamp|user|size|url|mime|mediatype|bitdepth',
       ...(validatedOptions.limit && { ailimit: validatedOptions.limit }),
     });
 
@@ -284,7 +295,7 @@ export class WikimediaClient {
    */
   async getAllLinks(options: AllLinksOptions = {}) {
     const validatedOptions = AllLinksOptionsSchema.parse(options);
-    
+
     const params = AllLinksParamsSchema.parse({
       action: 'query',
       list: 'alllinks',
@@ -311,7 +322,7 @@ export class WikimediaClient {
    */
   async getAllPages(options: AllPagesOptions = {}) {
     const validatedOptions = AllPagesOptionsSchema.parse(options);
-    
+
     const params = AllPagesParamsSchema.parse({
       action: 'query',
       list: 'allpages',
@@ -321,12 +332,20 @@ export class WikimediaClient {
       ...(validatedOptions.prefix && { apprefix: validatedOptions.prefix }),
       ...(validatedOptions.namespace !== undefined && { apnamespace: validatedOptions.namespace }),
       ...(validatedOptions.filterRedirects && { apfilterredir: validatedOptions.filterRedirects }),
-      ...(validatedOptions.filterLangLinks && { apfilterlanglinks: validatedOptions.filterLangLinks }),
+      ...(validatedOptions.filterLangLinks && {
+        apfilterlanglinks: validatedOptions.filterLangLinks,
+      }),
       ...(validatedOptions.minSize && { apminsize: validatedOptions.minSize }),
       ...(validatedOptions.maxSize && { apmaxsize: validatedOptions.maxSize }),
-      ...(validatedOptions.protectionType && { apprtype: validatedOptions.protectionType.join('|') }),
-      ...(validatedOptions.protectionLevel && { apprlevel: validatedOptions.protectionLevel.join('|') }),
-      ...(validatedOptions.protectionCascade && { apprfiltercascade: validatedOptions.protectionCascade }),
+      ...(validatedOptions.protectionType && {
+        apprtype: validatedOptions.protectionType.join('|'),
+      }),
+      ...(validatedOptions.protectionLevel && {
+        apprlevel: validatedOptions.protectionLevel.join('|'),
+      }),
+      ...(validatedOptions.protectionCascade && {
+        apprfiltercascade: validatedOptions.protectionCascade,
+      }),
       ...(validatedOptions.protectionExpiry && { apprexpiry: validatedOptions.protectionExpiry }),
       ...(validatedOptions.limit && { aplimit: validatedOptions.limit }),
       ...(validatedOptions.direction && { apdir: validatedOptions.direction }),
@@ -345,7 +364,7 @@ export class WikimediaClient {
    */
   async getExtracts(titles: string | string[], options: ExtractOptions = {}) {
     const validatedOptions = ExtractOptionsSchema.parse(options);
-    
+
     const params = ExtractsParamsSchema.parse({
       action: 'query',
       prop: 'extracts',
@@ -363,4 +382,4 @@ export class WikimediaClient {
     const response = await this.client.get('', { params });
     return createExtractsResponseSchema().parse(response.data);
   }
-} 
+}

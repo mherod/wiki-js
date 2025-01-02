@@ -125,25 +125,29 @@ export const ImageSearchOptionsSchema = z.object({
   user: z.string().optional(),
   filterBots: BotFilter.optional(),
   sha1: z.string().optional(),
-  properties: z.array(z.enum([
-    'timestamp',
-    'user',
-    'userid',
-    'comment',
-    'parsedcomment',
-    'canonicaltitle',
-    'url',
-    'size',
-    'dimensions',
-    'sha1',
-    'mime',
-    'mediatype',
-    'metadata',
-    'commonmetadata',
-    'extmetadata',
-    'bitdepth',
-    'badfile'
-  ])).optional(),
+  properties: z
+    .array(
+      z.enum([
+        'timestamp',
+        'user',
+        'userid',
+        'comment',
+        'parsedcomment',
+        'canonicaltitle',
+        'url',
+        'size',
+        'dimensions',
+        'sha1',
+        'mime',
+        'mediatype',
+        'metadata',
+        'commonmetadata',
+        'extmetadata',
+        'bitdepth',
+        'badfile',
+      ]),
+    )
+    .optional(),
   limit: z.number().int().min(1).max(500).optional(),
 });
 
@@ -204,25 +208,29 @@ export const createSearchResponseSchema = () =>
   createWikimediaResponseSchema(
     z.object({
       search: z.array(SearchResultSchema),
-      searchinfo: z.object({
-        totalhits: z.number(),
-        suggestion: z.string().optional(),
-        rewrittenquery: z.string().optional(),
-      }).optional(),
-    })
+      searchinfo: z
+        .object({
+          totalhits: z.number(),
+          suggestion: z.string().optional(),
+          rewrittenquery: z.string().optional(),
+        })
+        .optional(),
+    }),
   );
 
 export const createPageInfoResponseSchema = () =>
   createWikimediaResponseSchema(
     z.object({
       pages: z.record(PageInfoSchema),
-      normalized: z.array(
-        z.object({
-          from: z.string(),
-          to: z.string(),
-        })
-      ).optional(),
-    })
+      normalized: z
+        .array(
+          z.object({
+            from: z.string(),
+            to: z.string(),
+          }),
+        )
+        .optional(),
+    }),
   );
 
 export const createCategoriesResponseSchema = () =>
@@ -235,9 +243,9 @@ export const createCategoriesResponseSchema = () =>
           ns: z.number().optional(),
           pageid: z.number().optional(),
           title: z.string().optional(),
-        })
+        }),
       ),
-    })
+    }),
   );
 
 export const createLinksResponseSchema = () =>
@@ -247,16 +255,16 @@ export const createLinksResponseSchema = () =>
         z.object({
           links: z.array(LinkSchema).optional(),
           ...PageSchema.shape,
-        })
+        }),
       ),
-    })
+    }),
   );
 
 export const createBacklinksResponseSchema = () =>
   createWikimediaResponseSchema(
     z.object({
       backlinks: z.array(LinkSchema),
-    })
+    }),
   );
 
 export const createPageImagesResponseSchema = () =>
@@ -266,9 +274,9 @@ export const createPageImagesResponseSchema = () =>
         z.object({
           images: z.array(PageImageSchema).optional(),
           ...PageSchema.shape,
-        })
+        }),
       ),
-    })
+    }),
   );
 
 export const createImageInfoResponseSchema = () =>
@@ -280,15 +288,17 @@ export const createImageInfoResponseSchema = () =>
           imagerepository: z.string().optional(),
           missing: z.string().optional(),
           ...PageSchema.shape,
-        })
+        }),
       ),
-      normalized: z.array(
-        z.object({
-          from: z.string(),
-          to: z.string(),
-        })
-      ).optional(),
-    })
+      normalized: z
+        .array(
+          z.object({
+            from: z.string(),
+            to: z.string(),
+          }),
+        )
+        .optional(),
+    }),
   );
 
 export const createSearchImagesResponseSchema = () =>
@@ -300,9 +310,9 @@ export const createSearchImagesResponseSchema = () =>
           ns: z.number(),
           title: z.string(),
           name: z.string().optional(),
-        })
+        }),
       ),
-    })
+    }),
   );
 
 export const createFileUsageResponseSchema = () =>
@@ -314,15 +324,17 @@ export const createFileUsageResponseSchema = () =>
           missing: z.string().optional(),
           known: z.string().optional(),
           ...PageSchema.shape,
-        })
+        }),
       ),
-      normalized: z.array(
-        z.object({
-          from: z.string(),
-          to: z.string(),
-        })
-      ).optional(),
-    })
+      normalized: z
+        .array(
+          z.object({
+            from: z.string(),
+            to: z.string(),
+          }),
+        )
+        .optional(),
+    }),
   );
 
 export const createGlobalUsageResponseSchema = () =>
@@ -334,15 +346,17 @@ export const createGlobalUsageResponseSchema = () =>
           missing: z.string().optional(),
           known: z.string().optional(),
           ...PageSchema.shape,
-        })
+        }),
       ),
-      normalized: z.array(
-        z.object({
-          from: z.string(),
-          to: z.string(),
-        })
-      ).optional(),
-    })
+      normalized: z
+        .array(
+          z.object({
+            from: z.string(),
+            to: z.string(),
+          }),
+        )
+        .optional(),
+    }),
   );
 
 export const createAllLinksResponseSchema = () =>
@@ -352,9 +366,9 @@ export const createAllLinksResponseSchema = () =>
         z.object({
           title: z.string(),
           pageid: z.number().optional(),
-        })
+        }),
       ),
-    })
+    }),
   );
 
 export const createAllPagesResponseSchema = () =>
@@ -365,9 +379,9 @@ export const createAllPagesResponseSchema = () =>
           pageid: z.number(),
           ns: z.number(),
           title: z.string(),
-        })
+        }),
       ),
-    })
+    }),
   );
 
 export const createExtractsResponseSchema = () =>
@@ -377,9 +391,9 @@ export const createExtractsResponseSchema = () =>
         z.object({
           ...ExtractSchema.shape,
           ...PageSchema.shape,
-        })
+        }),
       ),
-    })
+    }),
   );
 
 // API Parameter Schemas
@@ -474,7 +488,9 @@ export type PageImage = z.infer<typeof PageImageSchema>;
 export type FileUsage = z.infer<typeof FileUsageSchema>;
 
 /** Generic response type for Wikimedia API responses */
-export type WikimediaResponse<T> = z.infer<ReturnType<typeof createWikimediaResponseSchema<z.ZodType<T>>>>;
+export type WikimediaResponse<T> = z.infer<
+  ReturnType<typeof createWikimediaResponseSchema<z.ZodType<T>>>
+>;
 
 /** Sort type for image search results */
 export type ImageSortType = z.infer<typeof ImageSortType>;
@@ -540,4 +556,4 @@ export type AllLinksParams = z.infer<typeof AllLinksParamsSchema>;
 export type AllPagesParams = z.infer<typeof AllPagesParamsSchema>;
 
 /** Parameters for getting page extracts */
-export type ExtractsParams = z.infer<typeof ExtractsParamsSchema>; 
+export type ExtractsParams = z.infer<typeof ExtractsParamsSchema>;
