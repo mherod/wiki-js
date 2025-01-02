@@ -808,4 +808,83 @@ describe('WikimediaClient', () => {
       });
     });
   });
+
+  describe('getPageViews', () => {
+    const mockPageViewsResponse = {
+      items: [
+        {
+          project: 'en.wikipedia',
+          article: 'JavaScript',
+          granularity: 'daily',
+          timestamp: '2024010100',
+          access: 'all-access',
+          agent: 'all-agents',
+          views: 1234,
+        },
+      ],
+    };
+
+    it('should fetch page views with default options', async () => {
+      mockAxiosInstance.get.mockResolvedValue({ data: mockPageViewsResponse });
+
+      const result = await client.getPageViews('JavaScript');
+      
+      expect(result).toEqual(mockPageViewsResponse);
+      expect(mockAxiosInstance.get).toHaveBeenCalledWith(
+        expect.stringMatching(/^https:\/\/wikimedia\.org\/api\/rest_v1\/metrics\/pageviews\/per-article\/en\.wikipedia\/all-access\/all-agents\/JavaScript\/daily\/\d{8}\/\d{8}$/),
+        expect.objectContaining({
+          baseURL: '',
+        })
+      );
+    });
+
+    it('should fetch page views with custom options', async () => {
+      mockAxiosInstance.get.mockResolvedValue({ data: mockPageViewsResponse });
+
+      const result = await client.getPageViews('JavaScript', {
+        start: '20240101',
+        end: '20240131',
+        granularity: 'monthly',
+        access: 'desktop',
+        agent: 'user',
+      });
+      
+      expect(result).toEqual(mockPageViewsResponse);
+      expect(mockAxiosInstance.get).toHaveBeenCalledWith(
+        'https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/desktop/user/JavaScript/monthly/20240101/20240131',
+        expect.objectContaining({
+          baseURL: '',
+        })
+      );
+    });
+
+    it('should handle special characters in title', async () => {
+      mockAxiosInstance.get.mockResolvedValue({ data: mockPageViewsResponse });
+
+      await client.getPageViews('C++ (programming language)');
+      
+      expect(mockAxiosInstance.get).toHaveBeenCalledWith(
+        expect.stringContaining('C%2B%2B%20%28programming%20language%29'),
+        expect.objectContaining({
+          baseURL: '',
+        })
+      );
+    });
+
+    it('should validate options', async () => {
+      mockAxiosInstance.get.mockResolvedValue({ data: mockPageViewsResponse });
+
+      await expect(client.getPageViews('JavaScript', {
+        granularity: 'invalid' as any,
+      })).rejects.toThrow();
+
+      await expect(client.getPageViews('JavaScript', {
+        access: 'invalid' as any,
+      })).rejects.toThrow();
+
+      await expect(client.getPageViews('JavaScript', {
+        agent: 'invalid' as any,
+      })).rejects.toThrow();
+    });
+  });
 }); 

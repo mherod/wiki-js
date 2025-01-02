@@ -462,6 +462,35 @@ export const ExtractsParamsSchema = BaseApiParamsSchema.extend({
   exsentences: z.number().optional(),
 });
 
+/**
+ * Schema for page views statistics options
+ */
+export const PageViewsOptionsSchema = z.object({
+  start: z.string().optional(),  // Start date in YYYYMMDD format
+  end: z.string().optional(),    // End date in YYYYMMDD format
+  granularity: z.enum(['daily', 'monthly']).default('daily'),
+  access: z.enum(['all-access', 'desktop', 'mobile-app', 'mobile-web']).default('all-access'),
+  agent: z.enum(['all-agents', 'user', 'spider', 'bot']).default('all-agents'),
+}).partial();
+
+/**
+ * Schema for page views statistics response
+ */
+export const PageViewsResponseSchema = z.object({
+  items: z.array(z.object({
+    project: z.string(),
+    article: z.string(),
+    granularity: z.string(),
+    timestamp: z.string(),
+    access: z.string(),
+    agent: z.string(),
+    views: z.number(),
+  })),
+});
+
+export type PageViewsOptions = z.infer<typeof PageViewsOptionsSchema>;
+export type PageViewsResponse = z.infer<typeof PageViewsResponseSchema>;
+
 // Type exports
 /** Configuration options for the WikimediaClient */
 export type WikimediaClientConfig = z.infer<typeof WikimediaClientConfigSchema>;
