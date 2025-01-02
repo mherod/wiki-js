@@ -651,4 +651,161 @@ describe('WikimediaClient', () => {
       );
     });
   });
+
+  describe('error handling', () => {
+    it('should handle API errors', async () => {
+      const errorResponse = {
+        error: {
+          code: 'invalid_parameter',
+          info: 'Invalid parameter',
+        },
+      };
+      mockAxiosInstance.get.mockRejectedValue(new Error('Invalid parameter'));
+
+      await expect(client.getPage('Invalid Page')).rejects.toThrow('Invalid parameter');
+    });
+
+    it('should handle network errors', async () => {
+      mockAxiosInstance.get.mockRejectedValue(new Error('Network Error'));
+
+      await expect(client.getPage('Any Page')).rejects.toThrow('Network Error');
+    });
+  });
+
+  describe('searchImages edge cases', () => {
+    const mockImageInfo = {
+      ns: 6,
+      title: 'File:Neural Network.png',
+      timestamp: '2024-01-01T00:00:00Z',
+      user: 'TestUser',
+      size: 1000,
+      width: 800,
+      height: 600,
+      url: 'https://example.com/image.png',
+      descriptionurl: 'https://example.com/description',
+      mime: 'image/png',
+      mediatype: 'BITMAP',
+      bitdepth: 24,
+    };
+
+    it('should handle empty query string', async () => {
+      const mockResponse = {
+        query: {
+          allimages: [mockImageInfo],
+        },
+      };
+      mockAxiosInstance.get.mockResolvedValue({ data: mockResponse });
+
+      await client.searchImages('');
+      
+      expect(mockAxiosInstance.get).toHaveBeenCalledWith('', {
+        params: expect.not.objectContaining({
+          aisearch: expect.anything(),
+        }),
+      });
+    });
+
+    it('should handle mixed sorting options', async () => {
+      const mockResponse = {
+        query: {
+          allimages: [mockImageInfo],
+        },
+      };
+      mockAxiosInstance.get.mockResolvedValue({ data: mockResponse });
+
+      // Test with timestamp sort but name-based parameters
+      await client.searchImages('test', {
+        sort: 'timestamp',
+        from: 'A', // Should be ignored for timestamp sort
+        to: 'B',   // Should be ignored for timestamp sort
+      });
+
+      expect(mockAxiosInstance.get).toHaveBeenCalledWith('', {
+        params: expect.not.objectContaining({
+          aifrom: expect.anything(),
+          aito: expect.anything(),
+        }),
+      });
+
+      // Test with name sort but timestamp-based parameters
+      await client.searchImages('test', {
+        sort: 'name',
+        start: '2024-01-01', // Should be ignored for name sort
+        end: '2024-01-31',   // Should be ignored for name sort
+        user: 'TestUser',    // Should be ignored for name sort
+        filterBots: 'nobots', // Should be ignored for name sort
+      });
+
+      expect(mockAxiosInstance.get).toHaveBeenCalledWith('', {
+        params: expect.not.objectContaining({
+          aistart: expect.anything(),
+          aiend: expect.anything(),
+          aiuser: expect.anything(),
+          aifilterbots: expect.anything(),
+        }),
+      });
+    });
+  });
+
+  describe('getAllLinks edge cases', () => {
+    it('should handle empty properties array', async () => {
+      const mockResponse = { query: { alllinks: [] } };
+      mockAxiosInstance.get.mockResolvedValue({ data: mockResponse });
+
+      await client.getAllLinks({
+        properties: [],
+      });
+
+      expect(mockAxiosInstance.get).toHaveBeenCalledWith('', {
+        params: expect.objectContaining({
+          action: 'query',
+          format: 'json',
+          list: 'alllinks',
+          alprop: '',
+        }),
+      });
+    });
+  });
+
+  describe('getAllPages edge cases', () => {
+    it('should handle empty protection arrays', async () => {
+      const mockResponse = { query: { allpages: [] } };
+      mockAxiosInstance.get.mockResolvedValue({ data: mockResponse });
+
+      await client.getAllPages({
+        protectionType: [],
+        protectionLevel: [],
+      });
+
+      expect(mockAxiosInstance.get).toHaveBeenCalledWith('', {
+        params: expect.objectContaining({
+          action: 'query',
+          format: 'json',
+          list: 'allpages',
+        }),
+      });
+    });
+  });
+
+  describe('getExtracts edge cases', () => {
+    it('should handle empty titles array', async () => {
+      await expect(client.getExtracts([])).rejects.toThrow();
+    });
+
+    it('should handle singleSection without sectionFormat', async () => {
+      const mockResponse = { query: { pages: {} } };
+      mockAxiosInstance.get.mockResolvedValue({ data: mockResponse });
+
+      await client.getExtracts('Test', {
+        singleSection: true,
+        // sectionFormat not provided
+      });
+
+      expect(mockAxiosInstance.get).toHaveBeenCalledWith('', {
+        params: expect.objectContaining({
+          exsectionformat: 'raw',
+        }),
+      });
+    });
+  });
 }); 
