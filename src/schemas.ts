@@ -448,35 +448,96 @@ export const ExtractsParamsSchema = BaseApiParamsSchema.extend({
   exsentences: z.number().optional(),
 });
 
-// Add type exports
+// Type exports
+/** Configuration options for the WikimediaClient */
 export type WikimediaClientConfig = z.infer<typeof WikimediaClientConfigSchema>;
+
+/** Information about a Wikipedia page */
 export type PageInfo = z.infer<typeof PageInfoSchema>;
+
+/** Category information for a Wikipedia page */
 export type Category = z.infer<typeof CategorySchema>;
+
+/** Link information from a Wikipedia page */
 export type Link = z.infer<typeof LinkSchema>;
+
+/** Search result from a Wikipedia search */
 export type SearchResult = z.infer<typeof SearchResultSchema>;
+
+/** Detailed information about an image */
 export type ImageInfo = z.infer<typeof ImageInfoSchema>;
+
+/** Image information from a Wikipedia page */
 export type PageImage = z.infer<typeof PageImageSchema>;
+
+/** Information about file usage on Wikipedia */
 export type FileUsage = z.infer<typeof FileUsageSchema>;
+
+/** Generic response type for Wikimedia API responses */
 export type WikimediaResponse<T> = z.infer<ReturnType<typeof createWikimediaResponseSchema<z.ZodType<T>>>>;
+
+/** Sort type for image search results */
 export type ImageSortType = z.infer<typeof ImageSortType>;
+
+/** Direction for sorting results */
 export type SortDirection = z.infer<typeof SortDirection>;
+
+/** Filter type for bot-created content */
 export type BotFilter = z.infer<typeof BotFilter>;
+
+/** Options for searching images */
 export type ImageSearchOptions = z.infer<typeof ImageSearchOptionsSchema>;
+
+/** Direction for link enumeration */
 export type LinkDirection = z.infer<typeof LinkDirection>;
+
+/** Property type for link enumeration */
 export type AllLinksProperty = z.infer<typeof AllLinksPropertySchema>;
+
+/** Options for enumerating links */
 export type AllLinksOptions = z.infer<typeof AllLinksOptionsSchema>;
+
+/** Filter type for redirects */
 export type RedirectFilter = z.infer<typeof RedirectFilter>;
+
+/** Filter type for language links */
 export type LangLinksFilter = z.infer<typeof LangLinksFilter>;
+
+/** Type of page protection */
 export type ProtectionType = z.infer<typeof ProtectionType>;
+
+/** Level of page protection */
 export type ProtectionLevel = z.infer<typeof ProtectionLevel>;
+
+/** Filter type for cascading protection */
 export type CascadeFilter = z.infer<typeof CascadeFilter>;
+
+/** Filter type for protection expiry */
 export type ProtectionExpiry = z.infer<typeof ProtectionExpiry>;
+
+/** Options for enumerating pages */
 export type AllPagesOptions = z.infer<typeof AllPagesOptionsSchema>;
+
+/** Format type for page extracts */
 export type ExtractFormatType = z.infer<typeof ExtractFormatType>;
+
+/** Options for getting page extracts */
 export type ExtractOptions = z.infer<typeof ExtractOptionsSchema>;
+
+/** Extract content from a page */
 export type Extract = z.infer<typeof ExtractSchema>;
+
+/** Base parameters for API requests */
 export type BaseApiParams = z.infer<typeof BaseApiParamsSchema>;
+
+/** Parameters for searching images */
 export type SearchImagesParams = z.infer<typeof SearchImagesParamsSchema>;
+
+/** Parameters for enumerating links */
 export type AllLinksParams = z.infer<typeof AllLinksParamsSchema>;
+
+/** Parameters for enumerating pages */
 export type AllPagesParams = z.infer<typeof AllPagesParamsSchema>;
+
+/** Parameters for getting page extracts */
 export type ExtractsParams = z.infer<typeof ExtractsParamsSchema>; 

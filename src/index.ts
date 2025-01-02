@@ -31,10 +31,19 @@ import {
 
 export * from './schemas';
 
+/**
+ * Client for interacting with the Wikimedia API
+ * Provides methods for fetching and searching Wikipedia content
+ */
 export class WikimediaClient {
   private client: AxiosInstance;
   private baseURL: string;
 
+  /**
+   * Creates a new WikimediaClient instance
+   *
+   * @param config - Configuration options for the client
+   */
   constructor(config: WikimediaClientConfig = {}) {
     const validatedConfig = WikimediaClientConfigSchema.parse(config);
     this.baseURL = validatedConfig.baseURL ?? 'https://en.wikipedia.org/w/api.php';
@@ -48,6 +57,9 @@ export class WikimediaClient {
 
   /**
    * Get page content by title
+   *
+   * @param title - The title of the page to fetch
+   * @returns The raw page content response
    */
   async getPage(title: string) {
     const response = await this.client.get('', {
@@ -64,7 +76,11 @@ export class WikimediaClient {
   }
 
   /**
-   * Search for pages
+   * Search for pages matching a query
+   *
+   * @param query - The search query
+   * @param limit - Maximum number of results to return (default: 10)
+   * @returns Search results matching the query
    */
   async search(query: string, limit: number = 10) {
     const response = await this.client.get('', {
@@ -81,6 +97,9 @@ export class WikimediaClient {
 
   /**
    * Get page information
+   *
+   * @param title - The title of the page
+   * @returns Information about the page
    */
   async getPageInfo(title: string) {
     const response = await this.client.get('', {
@@ -96,6 +115,9 @@ export class WikimediaClient {
 
   /**
    * Get categories for a page
+   *
+   * @param title - The title of the page
+   * @returns Categories the page belongs to
    */
   async getCategories(title: string) {
     const response = await this.client.get('', {
@@ -111,6 +133,9 @@ export class WikimediaClient {
 
   /**
    * Get links from a page
+   *
+   * @param title - The title of the page
+   * @returns Links found on the page
    */
   async getLinks(title: string) {
     const response = await this.client.get('', {
@@ -126,6 +151,10 @@ export class WikimediaClient {
 
   /**
    * Get pages that link to a page
+   *
+   * @param title - The title of the page
+   * @param limit - Maximum number of backlinks to return (default: 10)
+   * @returns Pages that link to the specified page
    */
   async getBacklinks(title: string, limit: number = 10) {
     const response = await this.client.get('', {
@@ -142,6 +171,9 @@ export class WikimediaClient {
 
   /**
    * Get all images used on a page
+   *
+   * @param title - The title of the page
+   * @returns Images used on the page
    */
   async getPageImages(title: string) {
     const response = await this.client.get('', {
@@ -157,6 +189,9 @@ export class WikimediaClient {
 
   /**
    * Get detailed information about specific images
+   *
+   * @param titles - Title or titles of the images
+   * @returns Detailed information about the specified images
    */
   async getImageInfo(titles: string | string[]) {
     const response = await this.client.get('', {
@@ -173,6 +208,10 @@ export class WikimediaClient {
 
   /**
    * Search for files/images with advanced options
+   *
+   * @param query - The search query
+   * @param options - Advanced search options
+   * @returns Search results matching the query and options
    */
   async searchImages(query: string, options: ImageSearchOptions = {}) {
     const validatedOptions = ImageSearchOptionsSchema.parse(options);
@@ -203,6 +242,9 @@ export class WikimediaClient {
 
   /**
    * Find all pages that use a specific file
+   *
+   * @param filename - The name of the file
+   * @returns Pages that use the specified file
    */
   async getFileUsage(filename: string) {
     const response = await this.client.get('', {
@@ -218,6 +260,9 @@ export class WikimediaClient {
 
   /**
    * Get global usage information for an image across all Wikimedia projects
+   *
+   * @param filename - The name of the file
+   * @returns Global usage information for the image
    */
   async getGlobalUsage(filename: string) {
     const response = await this.client.get('', {
@@ -233,6 +278,9 @@ export class WikimediaClient {
 
   /**
    * Enumerate all links that point to a given namespace
+   *
+   * @param options - Options for filtering and limiting the results
+   * @returns Links matching the specified criteria
    */
   async getAllLinks(options: AllLinksOptions = {}) {
     const validatedOptions = AllLinksOptionsSchema.parse(options);
@@ -257,6 +305,9 @@ export class WikimediaClient {
 
   /**
    * Enumerate all pages sequentially in a given namespace
+   *
+   * @param options - Options for filtering and limiting the results
+   * @returns Pages matching the specified criteria
    */
   async getAllPages(options: AllPagesOptions = {}) {
     const validatedOptions = AllPagesOptionsSchema.parse(options);
@@ -287,6 +338,10 @@ export class WikimediaClient {
 
   /**
    * Get plain-text or limited HTML extracts of pages
+   *
+   * @param titles - Title or titles of the pages
+   * @param options - Options for customizing the extract
+   * @returns Extracts from the specified pages
    */
   async getExtracts(titles: string | string[], options: ExtractOptions = {}) {
     const validatedOptions = ExtractOptionsSchema.parse(options);
